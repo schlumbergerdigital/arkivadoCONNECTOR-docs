@@ -23,7 +23,7 @@ Beim ersten Start werden Grundeinstellungen für Benutzer und der Verbindung zu 
     - Voraussetzung: API in ecoDMS aktiviert   
 Sollten Sie ecoDMS noch nicht konfiguriert haben, können Sie an dieser Stelle die Einrichtung durch Schliessen des Programms und Neustart der Anwendung fortsetzen und den ecoDMS Zugang später einrichten.
 
-    - Einstellungen siehe ecoDMS Administration ([Konfiguration ecoDMS API Zugriff](003 Konfiguration ecoDMS API Zugriff.md))
+    - Einstellungen siehe ecoDMS Administration ([Konfiguration ecoDMS API Zugriff](<002 Vorbereitung ecoDMS.md>))
 
 1. Jetzt können Sie den Zugang zum ecoDMS Server konfigurieren
 
