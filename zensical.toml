@@ -6,12 +6,32 @@
 
  nav = [
    { "Übersicht" = "index.html" },
+   {"Download" = "download.md"},
+    {"Changelog" = "changelog.md"},
+   {"Grundeinrichtung" = [
+   "grundeinrichtung/index.md",
    { "Erster Start" = "001 Erster Start.md" },
-   { "Vorbereitung ecoDMS" = "002 Vorbereitung ecoDMS.md" },
-   {"DATEV" = [
+   { "Vorbereitung ecoDMS" = "002 Vorbereitung ecoDMS.md" }
+   ]},
+  
+   {"KI" = [
+     "KI/index.md",
+     { "Konfiguration KI" = "ki/Konfiguration.md" },
+     { "Best Practice" = "ki/004 Best Practice.md" }
+   ]},
+    {"DATEV" = [
+   "datev/index.md",
    { "Konfiguration DATEV DUO" = "datev/003 Konfiguration DATEV DUO.md" },
    { "Konfiguration DATEV" = "datev/004 Konfiguration DATEV.md" },
    {"Erste Übertragung" = "datev/005 Erste Übertragung.md"}
+   ]},
+    {"SEPA" = [
+   "sepa/index.md",
+   { "Konfiguration SEPA" = "sepa/Konfiguration SEPA.md" }
+   ]},
+    {"Excel" = [
+   "excel/index.md",
+   { "Konfiguration Excel" = "excel/Konfiguration Excel.md" }
    ]}
  
  ]
@@ -36,10 +56,10 @@ extra_css = ["stylesheets/extra.css"]
 name = "material"
 # variant = "classic"
 # custom_dir = "overrides"
-favicon = "Favicon SD.jpg"
+favicon = "favicon-sd.svg"
 language = "de"
 features = [
-  "navigation.sections",
+  # "navigation.sections",  # würde Gruppen flach ausklappen statt einklappbar
   "navigation.path",
   "navigation.instant",
   #"navigation.tabs",
@@ -55,7 +75,7 @@ features = [
   "content.tabs.link",
   "content.tooltips",
   # "header.autohide",
-   "navigation.expand",
+  # "navigation.expand",
   "navigation.footer",
   "navigation.indexes",
   "navigation.instant",
@@ -63,7 +83,7 @@ features = [
   # "navigation.instant.progress",
   "navigation.path",
   # "navigation.prune",
-  "navigation.sections",
+  # "navigation.sections",
   # "navigation.tabs",
   # "navigation.tabs.sticky",
   "navigation.top",
