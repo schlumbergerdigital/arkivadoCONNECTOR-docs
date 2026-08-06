@@ -6,8 +6,8 @@
 
  nav = [
    { "Übersicht" = "index.html" },
-   {"Download" = "download.md"},
     {"Changelog" = "changelog.md"},
+   {"Download" = "download.md"},
    {"Grundeinrichtung" = [
    "grundeinrichtung/index.md",
    { "Erster Start" = "001 Erster Start.md" },
