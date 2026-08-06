@@ -15,7 +15,7 @@ site_name = "arkivado CONNECTOR Dokumentation"
 #  { "Markdown in 5min" = "markdown.md" },
 #]
 
-# extra_css = ["stylesheets/extra.css"]
+extra_css = ["stylesheets/extra.css"]
 # extra_javascript = ["javascripts/extra.js"]
 
 [project.theme]
@@ -68,9 +68,21 @@ logo = "96-quer-schlumberger-digital-logo.png"
 # text = "Inter"
 # code = "Jetbrains Mono"
 
+# Farben entsprechen den Themes "Hell" und "Schwarz" der Anwendung,
+# die konkreten Werte stehen in docs/stylesheets/extra.css
 [[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
 primary = "white"
-accent = "deep purple"
+accent = "blue"
+toggle = { icon = "material/weather-night", name = "Zum dunklen Modus wechseln" }
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "custom"
+accent = "custom"
+toggle = { icon = "material/weather-sunny", name = "Zum hellen Modus wechseln" }
 
 [project.plugins]
 search = {}
