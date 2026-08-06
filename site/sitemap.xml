@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>https://docs.arkivado.digital/index.html</loc>
-      </url>
-      <url>
         <loc>https://docs.arkivado.digital/001%20Erster%20Start.html</loc>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/002%20Vorbereitung%20ecoDMS.html</loc>
       </url>
       <url>
-        <loc>https://docs.arkivado.digital/003%20Konfiguration%20DATEV%20DUO.html</loc>
+        <loc>https://docs.arkivado.digital/datev/003%20Konfiguration%20DATEV%20DUO.html</loc>
       </url>
       <url>
-        <loc>https://docs.arkivado.digital/004%20Konfiguration%20DATEV.html</loc>
+        <loc>https://docs.arkivado.digital/datev/004%20Konfiguration%20DATEV.html</loc>
       </url>
       <url>
-        <loc>https://docs.arkivado.digital/005%20Erste%20%C3%9Cbertragung.html</loc>
-      </url>
-      <url>
-        <loc>https://docs.arkivado.digital/090%20Changelog.html</loc>
-      </url>
-      <url>
-        <loc>https://docs.arkivado.digital/091%20download.html</loc>
+        <loc>https://docs.arkivado.digital/datev/005%20Erste%20%C3%9Cbertragung.html</loc>
       </url>
 </urlset>

@@ -21,7 +21,7 @@ Beim ersten Start werden Grundeinstellungen für Benutzer und der Verbindung zu 
 
 3. Zugang zu Ihrem ecoDMS Server   
     - Voraussetzung: API in ecoDMS aktiviert   
-Sollten Sie ecoDMS noch nicht konfiguriert haben, können Sie an dieser Stelle die Einrichtung durch Schliessen des Programms und Neustart der Anwendung fortsetzen und den ecoDMS Zugang später einrichten.
+       Sollten Sie ecoDMS noch nicht konfiguriert haben, können Sie an dieser Stelle die Einrichtung durch Schliessen des Programms und Neustart der Anwendung fortsetzen und den ecoDMS Zugang später einrichten.
 
     - Einstellungen siehe ecoDMS Administration ([Konfiguration ecoDMS API Zugriff](<002 Vorbereitung ecoDMS.md>))
 
@@ -29,7 +29,11 @@ Sollten Sie ecoDMS noch nicht konfiguriert haben, können Sie an dieser Stelle d
 
     ![alt text](21-05-2026_16-03-46.png)
 
+
+
+
+
 2. Nun ist Ihre Schnittstelle bereit und Sie können den DATEV Unternehmen Online Zugang einrichten.
 
-     [Konfiguration DATEV Zugang](<004 Konfiguration DATEV.md>)
-    ![alt text](21-05-2026_16-25-29.png)
+     [Konfiguration DATEV Zugang](<datev/004 Konfiguration DATEV.md>)
+    ![alt text](datev/21-05-2026_16-25-29.png)

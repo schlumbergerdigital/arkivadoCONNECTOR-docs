@@ -63,6 +63,19 @@
   border-bottom: 1px solid #ececec;
 }
 
+/* Titel in der Kopfzeile: Primärfarbe, nicht fett */
+.md-header__topic:first-child {
+  font-weight: 400;
+}
+
+[data-md-color-scheme="default"] .md-header__title {
+  color: var(--ark-primary-dunkel);
+}
+
+[data-md-color-scheme="slate"] .md-header__title {
+  color: var(--ark-dark-primary-pastell);
+}
+
 /* -------------------------------------------------------------- Dunkel --- */
 
 [data-md-color-scheme="slate"] {
@@ -112,6 +125,21 @@
 [data-md-color-scheme] .md-nav--secondary .md-nav__link[href]:focus {
   background-color: var(--md-accent-fg-color--transparent);
   color: var(--md-accent-fg-color);
+}
+
+/* --------------------------------------------------------- Typografie --- */
+
+/* Seitentitel (H1) in der Sekundärfarbe, mit leichterer Schriftstärke */
+.md-typeset h1 {
+  font-weight: 400;
+}
+
+[data-md-color-scheme="default"] .md-typeset h1 {
+  color: var(--ark-secondary-kraeftig);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: var(--ark-dark-secondary);
 }
 
 /* ------------------------------------------------------------ Buttons ---- */

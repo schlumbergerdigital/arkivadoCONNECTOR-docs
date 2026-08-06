@@ -1,4 +1,22 @@
 [project]
+
+
+
+
+
+ nav = [
+   { "Übersicht" = "index.html" },
+   { "Erster Start" = "001 Erster Start.md" },
+   { "Vorbereitung ecoDMS" = "002 Vorbereitung ecoDMS.md" },
+   {"DATEV" = [
+   { "Konfiguration DATEV DUO" = "datev/003 Konfiguration DATEV DUO.md" },
+   { "Konfiguration DATEV" = "datev/004 Konfiguration DATEV.md" },
+   {"Erste Übertragung" = "datev/005 Erste Übertragung.md"}
+   ]}
+ 
+ ]
+
+
 site_url = "https://docs.arkivado.digital/"
 site_name = "arkivado CONNECTOR Dokumentation"
 # site_description = "Die Dokumentation für den arkivado ecoDMS CONNECTOR"
@@ -10,10 +28,6 @@ site_name = "arkivado CONNECTOR Dokumentation"
 # repo_name = "arkivadoCONNECTOR-docs"
 # edit_uri = "edit/main/docs/"
 
-# nav = [
-#   { "Erster Start" = "index.md" },
-#   { "ecoDM" = "markdown.md" },
-# ]
 
 extra_css = ["stylesheets/extra.css"]
 # extra_javascript = ["javascripts/extra.js"]
@@ -41,7 +55,7 @@ features = [
   "content.tabs.link",
   "content.tooltips",
   # "header.autohide",
-  # "navigation.expand",
+   "navigation.expand",
   "navigation.footer",
   "navigation.indexes",
   "navigation.instant",
