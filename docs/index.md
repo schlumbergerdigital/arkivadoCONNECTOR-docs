@@ -23,7 +23,7 @@ Direkt Online ***ohne Belegtransfer*** und lästiges Anmelden übertragen.
 
 !!! note ""
     Der arkivado Connector verbindet sich mit ecoDMS mit der sogenannten API Schnittstelle.
-    Deshalb ist es notwendig die API in den ecoDMS Einstellungen freizuschalten ([Konfiguration des ecoDMS API Zugriffs](003 Konfiguration ecoDMS.md)). Da Dokumente/Belege zu Datev Unternehmen Online (DUO) übertragen werden verbraucht ecoDMS API-Punkte. Diese sind nur in der ***ecoDMS ONE Lizenz*** enthalten. Mit der Business bzw. Privat Edition können keine Dokumente exportiert bzw. übertragen werden.
+    Deshalb ist es notwendig die API in den ecoDMS Einstellungen freizuschalten ([Konfiguration des ecoDMS API Zugriffs](<003 Konfiguration ecoDMS.md>)). Da Dokumente/Belege zu Datev Unternehmen Online (DUO) übertragen werden verbraucht ecoDMS API-Punkte. Diese sind nur in der ***ecoDMS ONE Lizenz*** enthalten. Mit der Business bzw. Privat Edition können keine Dokumente exportiert bzw. übertragen werden.
 
 Dank des arkivado Connectors ist keine DATEV Belegtransfer Software oder senden per E-Mail für die DATEV Übertragung notwendig. Der Vorgang der Übertragung wird in ecoDMS mit Datum vermerkt.
 So geht nichts verloren oder wird doppelt übertragen.
