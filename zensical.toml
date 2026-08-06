@@ -1,0 +1,136 @@
+[project]
+site_url = "https://docs.arkivado.digital/"
+site_name = "arkivado CONNECTOR Dokumentation"
+# site_description = "Die Dokumentation für den arkivado ecoDMS CONNECTOR"
+# site_author = "Max Schwesig "
+
+# copyright = "Copyright &copy; 2026 schlumberger digital e.K"
+
+# repo_url = "https://github.com/schlumbergerdigital/arkivadoCONNECTOR-docs"
+# repo_name = "arkivadoCONNECTOR-docs"
+# edit_uri = "edit/main/docs/"
+
+#nav = [
+#  { "Get started" = "index.md" },
+#  { "Markdown in 5min" = "markdown.md" },
+#]
+
+# extra_css = ["stylesheets/extra.css"]
+# extra_javascript = ["javascripts/extra.js"]
+
+[project.theme]
+name = "material"
+# variant = "classic"
+# custom_dir = "overrides"
+favicon = "Favicon SD.jpg"
+language = "de"
+features = [
+  "navigation.sections",
+  "navigation.path",
+  "navigation.instant",
+  #"navigation.tabs",
+  "content.code.copy",
+  "content.code.annotate",
+    "announce.dismiss",
+  # "content.action.edit",
+  # "content.action.view",
+  "content.code.annotate",
+  "content.code.copy",
+  "content.code.select",
+  "content.footnote.tooltips",
+  "content.tabs.link",
+  "content.tooltips",
+  # "header.autohide",
+  # "navigation.expand",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  # "navigation.instant.progress",
+  "navigation.path",
+  # "navigation.prune",
+  "navigation.sections",
+  # "navigation.tabs",
+  # "navigation.tabs.sticky",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+  # "toc.follow",
+  # "toc.integrate"
+]
+
+logo = "96-quer-schlumberger-digital-logo.png"
+
+# [project.theme.icon]
+# logo = "lucide/smile"
+
+# [project.theme.font]
+# text = "Inter"
+# code = "Jetbrains Mono"
+
+[[project.theme.palette]]
+primary = "white"
+accent = "deep purple"
+
+[project.plugins]
+search = {}
+offline = {}
+
+# [[project.extra.social]]
+# icon = "fontawesome/brands/github"
+# link = "https://github.com/user/repo"
+
+# [[project.extra.social]]
+# icon = "fontawesome/brands/mastodon"
+# link = "https://fosstodon.org/@user"
+
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+def_list = {}
+footnotes = {}
+md_in_html = {}
+toc = {
+  permalink = true
+}
+pymdownx.arithmatex = {
+  generic = true
+}
+pymdownx.betterem = {}
+pymdownx.caret = {}
+pymdownx.details = {}
+pymdownx.emoji = {
+  emoji_generator = "zensical.extensions.emoji.to_svg",
+  emoji_index = "zensical.extensions.emoji.twemoji",
+}
+pymdownx.highlight = {
+  anchor_linenums = true,
+  line_spans = "__span",
+  pygments_lang_class = true,
+}
+pymdownx.inlinehilite = {}
+pymdownx.keys = {}
+pymdownx.magiclink = {}
+pymdownx.mark = {}
+pymdownx.smartsymbols = {}
+# pymdownx.snippets = {
+#   base_path = "includes",
+# }
+pymdownx.superfences = {
+  custom_fences = [
+    {
+      name = "mermaid",
+      class = "mermaid",
+      format = "pymdownx.superfences.fence_code_format",
+    },
+  ],
+}
+pymdownx.tabbed = {
+  alternate_style = true,
+  combine_header_slug = true
+}
+pymdownx.tasklist = {
+  custom_checkbox = true
+}
+pymdownx.tilde = {}
