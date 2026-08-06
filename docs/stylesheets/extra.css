@@ -1,0 +1,305 @@
+/* ===========================================================================
+   arkivado CONNECTOR – Farbschema der Dokumentation
+
+   Die Werte stammen 1:1 aus der Anwendung (ecodatev,
+   frontend/assets/css/themes.css):
+
+   Theme "Hell"     Primary #e3f3fd / #2196f3 · Secondary #c8e6c9
+                    Accent  #ffe0b2 · Background #f5f5f5
+   Theme "Schwarz"  Primary #90caf9 / #42a5f5 · Secondary #a5d6a7
+                    Accent  #ffcc80 · Background #263238
+   =========================================================================== */
+
+:root {
+  /* Markenfarben – hell */
+  --ark-primary-pastell: #e3f3fd;
+  --ark-primary-pastell-dunkel: #c7e7fa;
+  --ark-primary: #2196f3;
+  --ark-primary-dunkel: #1976d2;
+  --ark-secondary: #c8e6c9;
+  --ark-secondary-kraeftig: #66a869;
+  --ark-accent: #ffe0b2;
+  --ark-accent-kraeftig: #fb8c00;
+  --ark-hintergrund: #f5f5f5;
+  --ark-text: #1f2937;
+  --ark-selection: rgba(33, 150, 243, 0.45);
+
+  /* Markenfarben – dunkel */
+  --ark-dark-primary-pastell: #90caf9;
+  --ark-dark-primary: #42a5f5;
+  --ark-dark-secondary: #a5d6a7;
+  --ark-dark-accent: #ffcc80;
+  --ark-dark-hintergrund: #263238;
+  --ark-dark-flaeche: #2f3a42;
+  --ark-dark-selection: rgba(66, 165, 245, 0.55);
+}
+
+/* ---------------------------------------------------------------- Hell --- */
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #ffffff;
+  --md-primary-fg-color--light: #ffffff;
+  --md-primary-fg-color--dark: var(--ark-primary-pastell);
+  --md-primary-bg-color: var(--ark-text);
+  --md-primary-bg-color--light: #4b5563;
+
+  --md-accent-fg-color: var(--ark-accent-kraeftig);
+  --md-accent-fg-color--transparent: rgba(251, 140, 0, 0.1);
+  --md-typeset-a-color: var(--ark-primary-dunkel);
+
+  --md-default-bg-color: #ffffff;
+  --md-code-bg-color: var(--ark-hintergrund);
+  --md-typeset-mark-color: var(--ark-accent);
+
+  --ark-nav-active-bg: var(--ark-primary-pastell);
+  --ark-nav-active-fg: var(--ark-primary-dunkel);
+
+  --md-footer-bg-color: var(--ark-dark-hintergrund);
+  --md-footer-bg-color--dark: #1c262b;
+}
+
+/* Kopfzeile bündig zum Anwendungslook: heller Rahmen statt harter Kante */
+[data-md-color-scheme="default"] .md-header {
+  border-bottom: 1px solid #ececec;
+}
+
+/* Titel in der Kopfzeile: Primärfarbe, nicht fett */
+.md-header__topic:first-child {
+  font-weight: 400;
+}
+
+[data-md-color-scheme="default"] .md-header__title {
+  color: var(--ark-primary-dunkel);
+}
+
+[data-md-color-scheme="slate"] .md-header__title {
+  color: var(--ark-dark-primary-pastell);
+}
+
+/* -------------------------------------------------------------- Dunkel --- */
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 205;
+
+  --md-primary-fg-color: var(--ark-dark-hintergrund);
+  --md-primary-fg-color--light: var(--ark-dark-flaeche);
+  --md-primary-fg-color--dark: #1c262b;
+  --md-primary-bg-color: #ffffff;
+  --md-primary-bg-color--light: rgba(255, 255, 255, 0.7);
+
+  --md-accent-fg-color: var(--ark-dark-accent);
+  --md-accent-fg-color--transparent: rgba(255, 204, 128, 0.1);
+  --md-typeset-a-color: var(--ark-dark-primary-pastell);
+
+  --md-default-bg-color: var(--ark-dark-hintergrund);
+  --md-code-bg-color: var(--ark-dark-flaeche);
+  --md-typeset-mark-color: rgba(255, 204, 128, 0.35);
+
+  --ark-nav-active-bg: rgba(144, 202, 249, 0.18);
+  --ark-nav-active-fg: var(--ark-dark-primary-pastell);
+
+  --md-footer-bg-color: #1c262b;
+  --md-footer-bg-color--dark: #161e22;
+}
+
+/* -------------------------------------------------------- Navigation ----- */
+
+/* Die Selektoren sind bewusst so lang, weil die Theme-Regeln
+   (.md-nav--primary .md-nav__item .md-nav__link--active bzw.
+   .md-nav--primary .md-nav__link[href]:hover:not(--active)) sonst gewinnen. */
+
+/* Aktuell geöffnete Seite: blau */
+[data-md-color-scheme] .md-nav--primary .md-nav__item .md-nav__link--active,
+[data-md-color-scheme] .md-nav--primary .md-nav__item .md-nav__link--active code,
+[data-md-color-scheme] .md-nav--secondary .md-nav__item .md-nav__link--active {
+  background-color: var(--ark-nav-active-bg);
+  color: var(--ark-nav-active-fg);
+}
+
+/* Mouseover auf beliebigen Navigationslinks: Akzent-Orange */
+[data-md-color-scheme] .md-nav--primary .md-nav__link[href]:hover,
+[data-md-color-scheme] .md-nav--primary .md-nav__link[href]:focus,
+[data-md-color-scheme] .md-nav--primary .md-nav__link[for]:hover,
+[data-md-color-scheme] .md-nav--primary .md-nav__link[for]:focus,
+[data-md-color-scheme] .md-nav--secondary .md-nav__link[href]:hover,
+[data-md-color-scheme] .md-nav--secondary .md-nav__link[href]:focus {
+  background-color: var(--md-accent-fg-color--transparent);
+  color: var(--md-accent-fg-color);
+}
+
+/* --------------------------------------------------------- Typografie --- */
+
+/* Seitentitel (H1) in der Sekundärfarbe, mit leichterer Schriftstärke */
+.md-typeset h1 {
+  font-weight: 400;
+}
+
+[data-md-color-scheme="default"] .md-typeset h1 {
+  color: var(--ark-secondary-kraeftig);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: var(--ark-dark-secondary);
+}
+
+/* ------------------------------------------------------------ Buttons ---- */
+
+[data-md-color-scheme="default"] .md-typeset .md-button--primary {
+  background-color: var(--ark-primary-pastell);
+  border-color: var(--ark-primary-pastell);
+  color: var(--ark-text);
+}
+
+[data-md-color-scheme="default"] .md-typeset .md-button--primary:hover {
+  background-color: var(--ark-accent);
+  border-color: var(--ark-accent);
+  color: var(--ark-text);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary {
+  background-color: var(--ark-dark-primary-pastell);
+  border-color: var(--ark-dark-primary-pastell);
+  color: #1f2937;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .md-button--primary:hover {
+  background-color: var(--ark-dark-accent);
+  border-color: var(--ark-dark-accent);
+  color: #1f2937;
+}
+
+/* ------------------------------------------------------- Hinweisboxen ---- */
+
+/* note / info / abstract → Primärblau */
+.md-typeset .admonition.note,
+.md-typeset details.note,
+.md-typeset .admonition.info,
+.md-typeset details.info,
+.md-typeset .admonition.abstract,
+.md-typeset details.abstract {
+  border-color: var(--ark-primary);
+}
+
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary,
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary,
+.md-typeset .abstract > .admonition-title,
+.md-typeset .abstract > summary {
+  background-color: rgba(33, 150, 243, 0.1);
+}
+
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before,
+.md-typeset .info > .admonition-title::before,
+.md-typeset .info > summary::before,
+.md-typeset .abstract > .admonition-title::before,
+.md-typeset .abstract > summary::before {
+  background-color: var(--ark-primary);
+}
+
+/* tip / success → Sekundärgrün */
+.md-typeset .admonition.tip,
+.md-typeset details.tip,
+.md-typeset .admonition.success,
+.md-typeset details.success {
+  border-color: var(--ark-secondary-kraeftig);
+}
+
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary,
+.md-typeset .success > .admonition-title,
+.md-typeset .success > summary {
+  background-color: rgba(102, 168, 105, 0.12);
+}
+
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before,
+.md-typeset .success > .admonition-title::before,
+.md-typeset .success > summary::before {
+  background-color: var(--ark-secondary-kraeftig);
+}
+
+/* warning → Akzentorange */
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: var(--ark-accent-kraeftig);
+}
+
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: rgba(251, 140, 0, 0.12);
+}
+
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before {
+  background-color: var(--ark-accent-kraeftig);
+}
+
+/* --------------------------------------------------------- Sonstiges ----- */
+
+/* Textmarkierung (Selection) – Werte identisch zur Anwendung */
+[data-md-color-scheme="default"] ::selection {
+  background-color: var(--ark-selection);
+  color: inherit;
+}
+
+[data-md-color-scheme="default"] ::-moz-selection {
+  background-color: var(--ark-selection);
+  color: inherit;
+}
+
+[data-md-color-scheme="slate"] ::selection {
+  background-color: var(--ark-dark-selection);
+  color: #ffffff;
+}
+
+[data-md-color-scheme="slate"] ::-moz-selection {
+  background-color: var(--ark-dark-selection);
+  color: #ffffff;
+}
+
+/* Suchtreffer: Hervorhebung in Liste und im Fließtext (search.highlight) */
+[data-md-color-scheme="default"] .md-search-result mark {
+  background-color: var(--ark-primary-pastell);
+  color: var(--ark-text);
+}
+
+[data-md-color-scheme="slate"] .md-search-result mark {
+  background-color: rgba(144, 202, 249, 0.25);
+  color: var(--ark-dark-primary-pastell);
+}
+
+[data-md-color-scheme="default"] .md-typeset [data-md-highlight],
+[data-md-color-scheme="default"] .md-typeset mark[data-md-highlight] {
+  background-color: var(--ark-primary-pastell);
+  color: var(--ark-text);
+}
+
+[data-md-color-scheme="slate"] .md-typeset [data-md-highlight],
+[data-md-color-scheme="slate"] .md-typeset mark[data-md-highlight] {
+  background-color: rgba(144, 202, 249, 0.25);
+  color: var(--ark-dark-primary-pastell);
+}
+
+/* Hervorgehobene Code-Zeilen (hl_lines) in Pastell-Primärfarbe */
+[data-md-color-scheme="default"] .highlight .hll,
+[data-md-color-scheme="default"] .md-typeset .highlighttable .linenos .special {
+  background-color: var(--ark-primary-pastell);
+}
+
+[data-md-color-scheme="slate"] .highlight .hll,
+[data-md-color-scheme="slate"] .md-typeset .highlighttable .linenos .special {
+  background-color: rgba(144, 202, 249, 0.18);
+}
+
+/* Ziel eines Anker-Sprungs kurz hervorheben */
+[data-md-color-scheme="default"] .md-typeset :target {
+  --md-scroll-margin: 3.6rem;
+  background-color: var(--ark-primary-pastell);
+}
+
+[data-md-color-scheme="slate"] .md-typeset :target {
+  --md-scroll-margin: 3.6rem;
+  background-color: rgba(144, 202, 249, 0.18);
+}

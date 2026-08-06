@@ -1,4 +1,42 @@
 [project]
+
+
+
+
+
+ nav = [
+   { "Übersicht" = "index.html" },
+   {"Download" = "download.md"},
+    {"Changelog" = "changelog.md"},
+   {"Grundeinrichtung" = [
+   "grundeinrichtung/index.md",
+   { "Erster Start" = "001 Erster Start.md" },
+   { "Vorbereitung ecoDMS" = "002 Vorbereitung ecoDMS.md" }
+   ]},
+  
+   {"KI" = [
+     "KI/index.md",
+     { "Konfiguration KI" = "ki/Konfiguration.md" },
+     { "Best Practice" = "ki/004 Best Practice.md" }
+   ]},
+    {"DATEV" = [
+   "datev/index.md",
+   { "Konfiguration DATEV DUO" = "datev/003 Konfiguration DATEV DUO.md" },
+   { "Konfiguration DATEV" = "datev/004 Konfiguration DATEV.md" },
+   {"Erste Übertragung" = "datev/005 Erste Übertragung.md"}
+   ]},
+    {"SEPA" = [
+   "sepa/index.md",
+   { "Konfiguration SEPA" = "sepa/Konfiguration SEPA.md" }
+   ]},
+    {"Excel" = [
+   "excel/index.md",
+   { "Konfiguration Excel" = "excel/Konfiguration Excel.md" }
+   ]}
+ 
+ ]
+
+
 site_url = "https://docs.arkivado.digital/"
 site_name = "arkivado CONNECTOR Dokumentation"
 # site_description = "Die Dokumentation für den arkivado ecoDMS CONNECTOR"
@@ -10,22 +48,18 @@ site_name = "arkivado CONNECTOR Dokumentation"
 # repo_name = "arkivadoCONNECTOR-docs"
 # edit_uri = "edit/main/docs/"
 
-#nav = [
-#  { "Get started" = "index.md" },
-#  { "Markdown in 5min" = "markdown.md" },
-#]
 
-# extra_css = ["stylesheets/extra.css"]
+extra_css = ["stylesheets/extra.css"]
 # extra_javascript = ["javascripts/extra.js"]
 
 [project.theme]
 name = "material"
 # variant = "classic"
 # custom_dir = "overrides"
-favicon = "Favicon SD.jpg"
+favicon = "favicon-sd.svg"
 language = "de"
 features = [
-  "navigation.sections",
+  # "navigation.sections",  # würde Gruppen flach ausklappen statt einklappbar
   "navigation.path",
   "navigation.instant",
   #"navigation.tabs",
@@ -49,7 +83,7 @@ features = [
   # "navigation.instant.progress",
   "navigation.path",
   # "navigation.prune",
-  "navigation.sections",
+  # "navigation.sections",
   # "navigation.tabs",
   # "navigation.tabs.sticky",
   "navigation.top",
@@ -68,9 +102,21 @@ logo = "96-quer-schlumberger-digital-logo.png"
 # text = "Inter"
 # code = "Jetbrains Mono"
 
+# Farben entsprechen den Themes "Hell" und "Schwarz" der Anwendung,
+# die konkreten Werte stehen in docs/stylesheets/extra.css
 [[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
 primary = "white"
-accent = "deep purple"
+accent = "blue"
+toggle = { icon = "material/weather-night", name = "Zum dunklen Modus wechseln" }
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "custom"
+accent = "custom"
+toggle = { icon = "material/weather-sunny", name = "Zum hellen Modus wechseln" }
 
 [project.plugins]
 search = {}

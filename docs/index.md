@@ -1,29 +1,41 @@
 ---
 title: Übersicht
 ---
-# ![arkivado ecoDMS Connector](arkivado-datev.png){ width="25" } arkivado ECODMS • DATEV CONNECTOR   
+# ![arkivado ecoDMS Connector](arkivado-datev.png){ width="25" } arkivado ECODMS CONNECTOR   
 
-**DATEV zertifiziert zur Übergabe von Belegen an DATEV Unternehmen Online (DUO)**
+Der Nachfolger unseres arkivado tools - jetzt mit komplett überarbeiteter Oberfläche und Konfigurationsmöglichkeit.
+![DATEV CONNECTOR](<28-05-2026_10-18-49.png>)
+
+!!! tip "Neue Featurs"  
+    -  Jetzt direktes Übetragen zu **DATEV Unternehmen Online** ohne Belegtransfer mit Kommentaren    
+    -  **Mistral KI**: vollautomatisches Klassifizeren Ihrer Dokumente    
+      
+
 
 ![alt text](11-05-2026_15-51-11.png)
 
 
-####Direkte Belegübergabe nach DATEV Unternehmen Online
 
-Der Nachfolger unseres arkivado tools - jetzt mit komplett überarbeiteter Oberfläche und Konfigurationsmöglichkeit.
+
 
 Enthält alles aus unserem arkivado Tool und wird fortlaufend weitere Funktionen erhalten.   
 Der arkivado CONNECTOR ist unser neues Tool für die Anbindung verschiedenster Software, Cloudanbierter und KI Modelle.
 
-![DATEV CONNECTOR](<28-05-2026_10-18-49.png>)
 
+
+
+## Drei Bausteine für durchgängige Dokumentenprozesse
+
+### DATEV-Anbindung für ecoDMS
 
 Direkt Online ***ohne Belegtransfer*** und lästiges Anmelden übertragen.   
 **Schnell - Einfach - Automatisch - übersichtlich und nachvollziehbar**
 
-!!! note ""
-    Der arkivado Connector verbindet sich mit ecoDMS mit der sogenannten API Schnittstelle.
-    Deshalb ist es notwendig die API in den ecoDMS Einstellungen freizuschalten ([Konfiguration des ecoDMS API Zugriffs](003 Konfiguration ecoDMS.md)). Da Dokumente/Belege zu Datev Unternehmen Online (DUO) übertragen werden verbraucht ecoDMS API-Punkte. Diese sind nur in der ***ecoDMS ONE Lizenz*** enthalten. Mit der Business bzw. Privat Edition können keine Dokumente exportiert bzw. übertragen werden.
+Übertragen Sie freigegebene Belege direkt aus ecoDMS an DATEV Unternehmen
+online. Der arkivado CONNECTOR kann die passenden Dokumente automatisiert
+ermitteln, den Exportstatus in ecoDMS dokumentieren und mehrere Mandanten sowie
+individuelle Filter berücksichtigen.
+
 
 Dank des arkivado Connectors ist keine DATEV Belegtransfer Software oder senden per E-Mail für die DATEV Übertragung notwendig. Der Vorgang der Übertragung wird in ecoDMS mit Datum vermerkt.
 So geht nichts verloren oder wird doppelt übertragen.
@@ -37,9 +49,39 @@ Belegbilder sind in DATEV-Sprech Belege bzw. die Dokumente (z.B. PDF, x-Rechnung
 Die Übertragung kann unabhängig vom Datumsbereich fortlaufend durchgeführt werden.   
 ==Der Übertrag ist auch für mehrere Mandanten/Betriebe möglich==   
 
-![alt text](image-7.png)   
 
-**Das Tool enthält auch die folgenden weiteren Funktionen:**
+[Mehr zur DATEV-Anbindung](datev/index.md){ .md-button .md-button--primary }
+
+### Mistral KI für ecoDMS
+
+Dokumente automatisch verstehen, klassifizieren und richtig ablegen: Die
+Mistral-Anbindung erkennt Dokumenttypen und relevante Inhalte, übernimmt
+Klassifizierungsmerkmale und ordnet Dokumente den vorgesehenen Ordnern in
+ecoDMS zu. Das reduziert manuelle Eingaben und sorgt für eine einheitliche
+Ablage.
+
+[Mehr zur Mistral KI](KI/index.md){ .md-button .md-button--primary }
+
+
+
+
+
+### SEPA-Export für ecoDMS
+
+Bereiten Sie Zahlungen auf Basis Ihrer archivierten Rechnungen für das
+Onlinebanking vor. Bereits vorhandene Zahlungsdaten werden für den SEPA-Export
+aufbereitet, wodurch sich doppelte Dateneingaben und Übertragungsfehler
+reduzieren lassen. Für den passenden Export können verschiedene Banken
+ausgewählt werden.
+
+[Mehr zum SEPA-Export](sepa/index.md){ .md-button .md-button--primary }
+
+
+
+
+
+
+### Weitere Funktionen
 
 - DATEV Export/Übergabe inkl. Buchungsdaten
 - SEPA Export Onlinebanking
