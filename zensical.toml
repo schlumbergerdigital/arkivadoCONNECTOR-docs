@@ -15,9 +15,9 @@
    ]},
   
    {"KI" = [
-     "KI/index.md",
+     "ki/index.md",
      { "Konfiguration KI" = "ki/Konfiguration.md" },
-     { "Best Practice" = "ki/004 Best Practice.md" }
+   ##  { "Best Practice" = "ki/Best Practice.md" }
    ]},
     {"DATEV" = [
    "datev/index.md",
@@ -32,7 +32,7 @@
    ]},
     {"Excel" = [
    "excel/index.md",
-   { "Konfiguration Excel" = "excel/Konfiguration Excel.md" }
+  ## { "Konfiguration Excel" = "excel/Konfiguration Excel.md" }
    ]},
    {"legacy Doku" = "https://legacy.docs.arkivado.digital/index.html"},
    {"Impressum" = "https://www.schlumberger.digital/privacy"},

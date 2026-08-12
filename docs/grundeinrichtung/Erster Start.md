@@ -40,5 +40,5 @@ Beim ersten Start werden die Grundeinstellungen für Benutzer und die Verbindung
     Weitere Einrichtungsschritte hängen davon ab was Sie wollen z.B.
 
        [DATEV einrichten](../datev/index.md){ .md-button .md-button--primary }
-       [Mistral KI einrichten](../KI/index.md){ .md-button .md-button--primary }
+       [Mistral KI einrichten](../ki/index.md){ .md-button .md-button--primary }
 

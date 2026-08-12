@@ -60,7 +60,7 @@ Klassifizierungsmerkmale und ordnet Dokumente den vorgesehenen Ordnern in
 ecoDMS zu. Das reduziert manuelle Eingaben und sorgt für eine einheitliche
 Ablage.
 
-[Mehr zur Mistral KI](KI/index.md){ .md-button .md-button--primary }
+[Mehr zur Mistral KI](ki/index.md){ .md-button .md-button--primary }
 
 
 
