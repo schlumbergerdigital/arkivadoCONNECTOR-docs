@@ -36,7 +36,7 @@ class upload_docu():
         self.ssh = its_ssh(kundenname=self.kundenname,username=username,server_ip=server_ip,keyfile_passwort=keyfile_passwort,password=password,DIR_PATH=self.DIR_PATH,top_domain=top_domain)
         self.sftp = None
         if self.ssh:
-             self.upload_docu()
+            self.upload_docu()      
         else:
             print(datetime.now(),"Domain",self.hostname,"nicht gefunden breche ab!")
 
@@ -85,6 +85,33 @@ class upload_docu():
         ]
         print("Berechtigung anpassen")
         self.ssh.exec(command )
+
+    #def upload_nginx_redirects(self,source_file=os.path.join("nginx","docs-legacy-redirects.conf"),
+    #                           snippet_path="/etc/nginx/snippets/docs-legacy-redirects.conf"):
+    #    source = os.path.join(self.DIR_PATH,source_file)
+    #    if not os.path.isfile(source):
+    #        print(datetime.now(),"Redirect-Snippet nicht gefunden, ueberspringe:",source)
+    #        return
+    #    print("Legacy-Weiterleitungen ausrollen")
+    #    self.ssh.exec(["mkdir -p /etc/nginx/snippets"])
+    #    self.upload(source,snippet_path)
+#
+    #    snippet_name = os.path.basename(snippet_path)
+    #    # include idempotent hinter die erste server_name-Zeile des Doku-vhosts setzen,
+    #    # bei fehlgeschlagenem "nginx -t" wird das Backup zurueckgespielt
+    #    include_cmd = (
+    #        'bash -c \'set -u; '
+    #        f'vhost=$(grep -rls "server_name.*{self.hostname}" /etc/nginx/conf.d/ | head -n1); '
+    #        'if [ -z "$vhost" ]; then echo "KEIN VHOST GEFUNDEN - include bitte manuell setzen"; exit 0; fi; '
+    #        f'if grep -q "{snippet_name}" "$vhost"; then echo "include bereits vorhanden in $vhost"; exit 0; fi; '
+    #        'cp "$vhost" "$vhost.bak"; '
+    #        'sed -i "0,/server_name/s|\\(server_name[^;]*;\\)|\\1\\n    include snippets/'
+    #        f'{snippet_name};|" "$vhost"; '
+    #        'nginx -t || { cp "$vhost.bak" "$vhost"; echo "NGINX-TEST FEHLGESCHLAGEN - vhost wiederhergestellt"; exit 1; }; '
+    #        'echo "include ergaenzt in $vhost"\''
+    #    )
+    #    self.ssh.exec([include_cmd])
+    #    self.ssh.exec(["nginx -t && systemctl reload nginx"])
 
 
 uploader = upload_docu(kundenname="docs",top_domain="arkivado.digital")

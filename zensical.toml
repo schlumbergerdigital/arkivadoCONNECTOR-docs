@@ -32,7 +32,10 @@
     {"Excel" = [
    "excel/index.md",
    { "Konfiguration Excel" = "excel/Konfiguration Excel.md" }
-   ]}
+   ]},
+   {"legacy Doku" = "https://legacy.docs.arkivado.digital/index.html"},
+   {"Impressum" = "impressum.md"},
+   {"Datenschutz" = "datenschutz.md"}
  
  ]
 

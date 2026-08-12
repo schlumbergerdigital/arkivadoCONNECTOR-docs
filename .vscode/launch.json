@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Zensical: Dokumentation starten",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "zensical",
+      "args": ["serve"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      // Fest verdrahtet, da das Projekt keine eigene venv hat.
+      "python": "C:\\python\\Python314\\python.exe",
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    },
+    {
+      "name": "Zensical: Dokumentation bauen",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "zensical",
+      "args": ["build"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": false,
+      "python": "C:\\python\\Python314\\python.exe",
+      "env": {
+        "PYTHONIOENCODING": "utf-8"
+      }
+    }
+  ]
+}
