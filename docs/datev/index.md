@@ -38,9 +38,16 @@ in ecoDMS bis zur Bereitstellung in DATEV.
 
 ### Einrichtung und erste Übertragung
 
-1. DATEV Unternehmen Online mit dem CONNECTOR verbinden     
-    [Konfiguration DATEV DUO](003 Konfiguration DATEV DUO.md){ .md-button }
-2. DATEV Mandanten Auswählen und Filter für ecoDMS Bestimmen        
-    [Datev Mandante](<004 Konfiguration DATEV.md>){ .md-button }
-2. Erste Übertragung       
-    [Datev Mandante](<005 Erste Übertragung.md>){ .md-button }
+
+1. **ecoDMS Felder erweitern**   
+    [ecoDMS Felder anlegen](<Konfiguration ecoDMS-datev.md>){ .md-button .md-button--primary } 
+
+2. **DATEV Unternehmen Online mit dem CONNECTOR verbinden**     
+    [Konfiguration DATEV DUO](Konfiguration DATEV DUO.md){ .md-button .md-button--primary } 
+
+3. **DATEV Mandanten Auswählen und Filter für ecoDMS Bestimmen**        
+    [Datev Mandante](<004 Konfiguration DATEV.md>){ .md-button .md-button--primary } 
+
+4. **Erste Übertragung**     
+    [Datev Mandante](<005 Erste Übertragung.md>){ .md-button .md-button--primary } 
+    

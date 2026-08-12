@@ -14,7 +14,7 @@
         <link rel="prev" href="../download.html">
       
       
-        <link rel="next" href="../001%20Erster%20Start.html">
+        <link rel="next" href="./Vorbereitung%20ecoDMS.html">
       
       
         
@@ -360,14 +360,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../001%20Erster%20Start.html" class="md-nav__link">
+      <a href="./Vorbereitung%20ecoDMS.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Erster Start
+  Vorbereitung ecoDMS
 
     
   </span>
@@ -387,14 +387,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../002%20Vorbereitung%20ecoDMS.html" class="md-nav__link">
+      <a href="./Erster%20Start.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-  Vorbereitung ecoDMS
+  Erster Start
 
     
   </span>
@@ -558,6 +558,8 @@
       
         
       
+        
+      
     
     
     
@@ -612,7 +614,34 @@
   
   
     <li class="md-nav__item">
-      <a href="../datev/003%20Konfiguration%20DATEV%20DUO.html" class="md-nav__link">
+      <a href="../datev/Konfiguration%20ecoDMS-datev.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  ecoDMS Felder einrichten
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../datev/Konfiguration%20DATEV%20DUO.html" class="md-nav__link">
         
   
   
@@ -918,7 +947,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../impressum.md" class="md-nav__link">
+      <a href="https://www.schlumberger.digital/privacy" class="md-nav__link">
         
   
   
@@ -926,32 +955,6 @@
     
   
   Impressum
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../datenschutz.md" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Datenschutz
 
     
   </span>
@@ -980,6 +983,11 @@
                       
                     
                     
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
                   
                   <div class="md-sidebar__inner">
                     
@@ -991,6 +999,36 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Inhaltsverzeichnis
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-in-ecodms-api-freischalten" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        1. In ecoDMS Api Freischalten
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-den-connector-konfigurieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        2.  Den CONNECTOR konfigurieren
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1014,14 +1052,13 @@
 <h1 id="grundeinrichtung">Grundeinrichtung<a class="headerlink" href="#grundeinrichtung" title="Permanent link">&para;</a></h1>
 <p>Dieser Abschnitt führt Sie durch die Einrichtung des arkivado CONNECTOR bis zur
 ersten funktionsfähigen Verbindung.</p>
-<div class="admonition note">
-<p>Der arkivado Connector verbindet sich mit ecoDMS mit der sogenannten API Schnittstelle.
-Deshalb ist es notwendig die API in den ecoDMS Einstellungen freizuschalten ( <a href="002 Vorbereitung ecoDMS.html">Konfiguration des ecoDMS API Zugriffs</a> ). Da Dokumente/Belege zu Datev Unternehmen Online (DUO) übertragen werden verbraucht ecoDMS API-Punkte. Diese sind nur in der <strong><em>ecoDMS ONE Lizenz</em></strong> enthalten. Mit der Business bzw. Privat Edition können keine Dokumente exportiert bzw. übertragen werden.</p>
+<h2 id="1-in-ecodms-api-freischalten">1. In ecoDMS Api Freischalten<a class="headerlink" href="#1-in-ecodms-api-freischalten" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p>Da Dokumente/Belege zu Datev Unternehmen Online (DUO) übertragen werden verbraucht ecoDMS API-Punkte. Diese sind nur in der <strong><em>ecoDMS ONE Lizenz</em></strong> enthalten. Mit der Business bzw. Privat Edition können keine Dokumente exportiert bzw. übertragen werden.</p>
 </div>
-<ul>
-<li><a class="md-button md-button--primary" href="../001 Erster Start.html">Erster Start</a> – Installation, Lizenz und erster Aufruf der Anwendung</li>
-<li><a class="md-button md-button--primary" href="../002 Vorbereitung ecoDMS.html">Vorbereitung ecoDMS</a> – API-Zugriff in ecoDMS freischalten und Zugangsdaten hinterlegen</li>
-</ul>
+<p><a class="md-button md-button--primary" href="Vorbereitung ecoDMS.html">Vorbereitung ecoDMS</a> - ecoDMS Konfigurieren</p>
+<h2 id="2-den-connector-konfigurieren">2.  Den CONNECTOR konfigurieren<a class="headerlink" href="#2-den-connector-konfigurieren" title="Permanent link">&para;</a></h2>
+<p><a class="md-button md-button--primary" href="Erster Start.html">Erster Start</a> – Installation, Lizenz und erster Aufruf der Anwendung</p>
 
 
 
@@ -1078,13 +1115,13 @@ Deshalb ist es notwendig die API in den ecoDMS Einstellungen freizuschalten ( <a
         
         
           
-          <a href="../001%20Erster%20Start.html" class="md-footer__link md-footer__link--next" aria-label="Weiter: Erster Start">
+          <a href="./Vorbereitung%20ecoDMS.html" class="md-footer__link md-footer__link--next" aria-label="Weiter: Vorbereitung ecoDMS">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Weiter
               </span>
               <div class="md-ellipsis">
-                Erster Start
+                Vorbereitung ecoDMS
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1125,6 +1162,8 @@ Deshalb ist es notwendig die API in den ecoDMS Einstellungen freizuschalten ( <a
     
     
       <script src="../assets/javascripts/bundle.69c251d7.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
       
     
   </body>

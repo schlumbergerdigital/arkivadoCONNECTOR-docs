@@ -10,8 +10,8 @@
    {"Download" = "download.md"},
    {"Grundeinrichtung" = [
    "grundeinrichtung/index.md",
-   { "Erster Start" = "001 Erster Start.md" },
-   { "Vorbereitung ecoDMS" = "002 Vorbereitung ecoDMS.md" }
+   { "Vorbereitung ecoDMS" = "grundeinrichtung/Vorbereitung ecoDMS.md" },
+   { "Erster Start" = "grundeinrichtung/Erster Start.md" }
    ]},
   
    {"KI" = [
@@ -21,7 +21,8 @@
    ]},
     {"DATEV" = [
    "datev/index.md",
-   { "Konfiguration DATEV DUO" = "datev/003 Konfiguration DATEV DUO.md" },
+   { "ecoDMS Felder einrichten" = "datev/Konfiguration ecoDMS-datev.md" },
+   { "Konfiguration DATEV DUO" = "datev/Konfiguration DATEV DUO.md" },
    { "Konfiguration DATEV" = "datev/004 Konfiguration DATEV.md" },
    {"Erste Übertragung" = "datev/005 Erste Übertragung.md"}
    ]},
@@ -34,9 +35,8 @@
    { "Konfiguration Excel" = "excel/Konfiguration Excel.md" }
    ]},
    {"legacy Doku" = "https://legacy.docs.arkivado.digital/index.html"},
-   {"Impressum" = "impressum.md"},
-   {"Datenschutz" = "datenschutz.md"}
- 
+   {"Impressum" = "https://www.schlumberger.digital/privacy"},
+
  ]
 
 
@@ -53,7 +53,7 @@ site_name = "arkivado CONNECTOR Dokumentation"
 
 
 extra_css = ["stylesheets/extra.css"]
-# extra_javascript = ["javascripts/extra.js"]
+extra_javascript = ["javascripts/extra.js"]
 
 [project.theme]
 name = "material"

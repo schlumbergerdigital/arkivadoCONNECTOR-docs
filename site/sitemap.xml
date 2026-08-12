@@ -10,10 +10,10 @@
         <loc>https://docs.arkivado.digital/grundeinrichtung/index.html</loc>
       </url>
       <url>
-        <loc>https://docs.arkivado.digital/001%20Erster%20Start.html</loc>
+        <loc>https://docs.arkivado.digital/grundeinrichtung/Vorbereitung%20ecoDMS.html</loc>
       </url>
       <url>
-        <loc>https://docs.arkivado.digital/002%20Vorbereitung%20ecoDMS.html</loc>
+        <loc>https://docs.arkivado.digital/grundeinrichtung/Erster%20Start.html</loc>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/KI/index.html</loc>
@@ -22,7 +22,10 @@
         <loc>https://docs.arkivado.digital/datev/index.html</loc>
       </url>
       <url>
-        <loc>https://docs.arkivado.digital/datev/003%20Konfiguration%20DATEV%20DUO.html</loc>
+        <loc>https://docs.arkivado.digital/datev/Konfiguration%20ecoDMS-datev.html</loc>
+      </url>
+      <url>
+        <loc>https://docs.arkivado.digital/datev/Konfiguration%20DATEV%20DUO.html</loc>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/datev/004%20Konfiguration%20DATEV.html</loc>
