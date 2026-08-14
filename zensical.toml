@@ -17,6 +17,7 @@
    {"KI" = [
      "ki/index.md",
      { "Konfiguration KI" = "ki/Konfiguration.md" },
+     { "E-Rechnung" = "ki/E-Rechnung.md" },
    ##  { "Best Practice" = "ki/Best Practice.md" }
    ]},
     {"DATEV" = [
