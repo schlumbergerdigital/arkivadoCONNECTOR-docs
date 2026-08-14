@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Seite nicht gefunden &ndash; schlumberger digital</title>
+<title>App nicht erreichbar &ndash; schlumberger digital</title>
 <link rel="icon" href="/_error/favicon.svg">
 <style>
   /* Werte aus docs/stylesheets/extra.css, damit die Seite ohne Theme-Assets auskommt */
@@ -216,7 +216,9 @@
     padding: 0.7rem 1.5rem;
     border-radius: 0.4rem;
     border: 1px solid transparent;
+    font: inherit;
     font-weight: 600;
+    cursor: pointer;
     text-decoration: none;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
   }
@@ -247,6 +249,18 @@
   .knopf:focus-visible {
     outline: 2px solid var(--ark-accent-kraeftig);
     outline-offset: 2px;
+  }
+
+  .status {
+    margin-top: 1.25rem;
+    font-size: 0.85rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--ark-text-leise);
+  }
+
+  .status--wieder-da {
+    color: var(--ark-secondary-kraeftig);
+    font-weight: 600;
   }
 
   .spruch {
@@ -287,15 +301,19 @@
     <p class="punkte" id="punkte"></p>
     <main class="karte" id="karte">
       <img class="logo" src="/_error/logo.png" alt="schlumberger digital">
-      <p class="code">404</p>
-      <h1>Diese Seite gibt es hier nicht.</h1>
+      <p class="code">502</p>
+      <h1>Die App ist gerade nicht erreichbar.</h1>
       <p>
-        Die Adresse ist falsch geschrieben oder der Inhalt wurde verschoben.
+        Der Dienst hinter dieser Adresse antwortet nicht.
       </p>
+      <p>Sollte dieser Fehler länger anhalten, kontaktieren Sie bitte den Support.</p>
       <div class="aktionen">
-        <a class="knopf knopf--primaer" href="/">Zurück zur Startseite</a>
+        <button class="knopf knopf--primaer" type="button" id="jetztPruefen">Jetzt prüfen</button>
+
       </div>
-      <p class="spruch" id="spruch">Diese Seite ist wie ein Einhorn: Alle reden davon, gesehen hat sie keiner.</p>
+      <p class="status" id="status" role="status">Verbindung wird geprüft …</p>
+      <p class="spruch" id="spruch">Der Server macht gerade eine Kaffeepause. Ohne Bescheid zu sagen.</p>
+
     </main>
   </div>
   <footer>
@@ -304,18 +322,18 @@
   </footer>
   <script>
     const sprueche = [
-      "Diese Seite ist wie ein Einhorn: Alle reden davon, gesehen hat sie keiner.",
-      "404 – die Seite hat sich entschieden, ein neues Leben anzufangen.",
-      "Wir haben überall gesucht. Sogar unter dem Sofa.",
-      "Du hast das Ende des Internets gefunden. Herzlichen Glückwunsch!",
-      "Diese Seite ist im Urlaub. Ohne Rückflugticket.",
-      "Hier ist nichts. Aber ein wirklich schön gestaltetes Nichts.",
-      "Die Seite wurde von Aliens entführt. Wir verhandeln noch.",
+      "Der Server macht gerade eine Kaffeepause. Ohne Bescheid zu sagen.",
+      "502 – die App und der Server reden gerade nicht miteinander.",
+      "Irgendwo zwischen hier und dort ist ein Kabel eingeschlafen.",
+      "Wir haben es schon mit Aus- und wieder Einschalten versucht.",
+      "Die Anwendung ist kurz weg. Sie kommt wieder, versprochen.",
       "Kein Grund zur Panik. Höchstens ein kleiner.",
-      "Seite nicht gefunden. Selbstwertgefühl trotzdem intakt?",
-      "Vielleicht war es ein Tippfehler. Vielleicht war es das Schicksal.",
-      "Diese Seite ist nur ein Gerücht.",
-      "Statistisch gesehen war das der interessanteste Fehler deines Tages."
+      "Der Dienst hat sich entschieden, heute mal nicht zu antworten.",
+      "Bitte einmal tief durchatmen. Wir prüfen im Hintergrund weiter.",
+      "Technisch gesehen: Es hakt. Menschlich gesehen: Es tut uns leid.",
+      "Die Server sind gerade damit beschäftigt, wichtig auszusehen.",
+      "Statistisch gesehen war das der interessanteste Fehler deines Tages.",
+      "Bis es weitergeht: Leertaste drücken und springen."
     ];
 
     const KARTE = document.getElementById("karte");
@@ -324,6 +342,7 @@
     const SPRUCH = document.getElementById("spruch");
     const WOLKEN = document.getElementById("wolken");
     const CODE = document.querySelector(".code");
+    const STATUS = document.getElementById("status");
 
     const SCHWERKRAFT = 2600;   // px/s²
     const ABSPRUNG = 880;       // px/s, ergibt gut 9 rem Sprunghöhe
@@ -636,6 +655,71 @@
     window.addEventListener("resize", wolkenPlatzieren);
 
     neuerSpruch();
+
+    // Gleiche Adresse wie die App: Antwortet sie wieder, laeuft der Dienst dahinter.
+    const PRUEF_ZIEL = "/";
+    const PRUEF_INTERVALL = 30;
+    const PRUEF_TIMEOUT = 8000;
+
+    let restSekunden = PRUEF_INTERVALL;
+    let pruefungLaeuft = false;
+    let wiederDa = false;
+
+    async function erreichbar() {
+      const abbruch = new AbortController();
+      const stopper = setTimeout(() => abbruch.abort(), PRUEF_TIMEOUT);
+      try {
+        const antwort = await fetch(PRUEF_ZIEL + "?probe=" + Date.now(), {
+          method: "HEAD",
+          cache: "no-store",
+          signal: abbruch.signal
+        });
+        return antwort.ok;
+      } catch (e) {
+        return false;
+      } finally {
+        clearTimeout(stopper);
+      }
+    }
+
+    function wartestand() {
+      STATUS.textContent = "Noch nicht erreichbar – nächste Prüfung in " + restSekunden + " s";
+    }
+
+    async function pruefen() {
+      if (pruefungLaeuft || wiederDa) return;
+      pruefungLaeuft = true;
+      STATUS.textContent = "Verbindung wird geprüft …";
+
+      const ok = await erreichbar();
+      pruefungLaeuft = false;
+
+      if (ok) {
+        wiederDa = true;
+        STATUS.classList.add("status--wieder-da");
+        STATUS.textContent = "Die App ist wieder da. Seite wird neu geladen …";
+        fanfare();
+        setTimeout(() => location.reload(), 1500);
+        return;
+      }
+
+      restSekunden = PRUEF_INTERVALL;
+      wartestand();
+    }
+
+    setInterval(() => {
+      if (pruefungLaeuft || wiederDa || document.hidden) return;
+      restSekunden -= 1;
+      if (restSekunden <= 0) pruefen();
+      else wartestand();
+    }, 1000);
+
+    document.getElementById("jetztPruefen").addEventListener("click", () => {
+      restSekunden = PRUEF_INTERVALL;
+      pruefen();
+    });
+
+    pruefen();
 
     document.addEventListener("keydown", (e) => {
       if (!SPIEL_MQ.matches) return;
