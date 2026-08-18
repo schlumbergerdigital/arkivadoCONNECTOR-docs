@@ -1,6 +1,6 @@
 ---
 title: Einstellungen
-description: Einstellungen des arkivado CONNECTOR konfigurieren: ecoDMS-Verbindung, Exporte, DATEV, Pfade, Oberfläche, Lizenz und Backups.
+description: "Einstellungen des arkivado CONNECTOR konfigurieren: ecoDMS-Verbindung, Exporte, DATEV, Pfade, Oberfläche, Lizenz und Backups."
 tags:
     - Einstellungen
     - Konfiguration

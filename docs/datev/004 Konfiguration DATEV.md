@@ -1,6 +1,6 @@
 ---
 title: Anpassung DATEV in APP
-description: DATEV-Export im arkivado CONNECTOR konfigurieren: ecoDMS-Dokumente filtern, DATEV-Belegtypen zuordnen und Belege an DATEV Unternehmen Online übertragen.
+description: "DATEV-Export im arkivado CONNECTOR konfigurieren: ecoDMS-Dokumente filtern, DATEV-Belegtypen zuordnen und Belege an DATEV Unternehmen Online übertragen."
 tags:
     - DATEV
     - DATEV Unternehmen Online

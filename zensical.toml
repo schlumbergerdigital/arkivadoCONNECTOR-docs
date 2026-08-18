@@ -61,8 +61,6 @@ site_description = "Dokumentation für den arkivado CONNECTOR: ecoDMS mit DATEV,
 # repo_name = "arkivadoCONNECTOR-docs"
 # edit_uri = "edit/main/docs/"
 
-[project.plugins.offline]
-enabled = true
 
 
 extra_css = ["stylesheets/extra.css"]
@@ -136,8 +134,9 @@ toggle = { icon = "material/weather-sunny", name = "Zum hellen Modus wechseln" }
 
 [project.plugins]
 search = {}
-offline = {}
 
+[project.plugins.offline]
+enabled = true
 # [[project.extra.social]]
 # icon = "fontawesome/brands/github"
 # link = "https://github.com/user/repo"
@@ -196,3 +195,5 @@ pymdownx.tasklist = {
   custom_checkbox = true
 }
 pymdownx.tilde = {}
+
+

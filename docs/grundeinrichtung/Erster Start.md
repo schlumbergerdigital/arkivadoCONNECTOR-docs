@@ -1,6 +1,6 @@
 ---
 title: Erster Start arkviado CONNECTOR
-description: Erster Start des arkivado CONNECTOR: Benutzer anlegen, Lizenz aktivieren und die Verbindung zum ecoDMS-Server einrichten.
+description: "Erster Start des arkivado CONNECTOR: Benutzer anlegen, Lizenz aktivieren und die Verbindung zum ecoDMS-Server einrichten."
 tags:
     - Grundeinrichtung
     - Erster Start

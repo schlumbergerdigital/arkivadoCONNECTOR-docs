@@ -1,12 +1,12 @@
 ---
 title: Mistral KI konfigurieren
-description: Mistral KI im arkivado CONNECTOR konfigurieren: API-Zugang, Klassifizierungsfelder und automatische ecoDMS-Dokumentenablage einrichten.
+description: "Mistral KI im arkivado CONNECTOR konfigurieren: API-Zugang, Klassifizierungsfelder und automatische ecoDMS-Dokumentenablage einrichten."
 tags:
-	- Mistral KI
-	- Konfiguration
-	- ecoDMS
-	- API
-	- Dokumentenklassifizierung
+    - Mistral KI
+    - Konfiguration
+    - ecoDMS
+    - API
+    - Dokumentenklassifizierung
 ---
 
 # Mistral KI konfigurieren

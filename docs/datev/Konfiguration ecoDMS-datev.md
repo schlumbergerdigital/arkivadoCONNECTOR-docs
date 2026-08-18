@@ -1,6 +1,6 @@
 ---
 title: Einrichtung der Klassifizierungsfelder in ecoDMS für Datev
-description: ecoDMS-Klassifizierungsfelder für den DATEV-Export einrichten: Dokumentarten, Exportmarkierungen und benötigte Rechnungsfelder konfigurieren.
+description: "ecoDMS-Klassifizierungsfelder für den DATEV-Export einrichten: Dokumentarten, Exportmarkierungen und benötigte Rechnungsfelder konfigurieren."
 tags:
     - DATEV
     - ecoDMS

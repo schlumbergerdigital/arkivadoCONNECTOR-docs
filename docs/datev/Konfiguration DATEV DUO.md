@@ -1,6 +1,6 @@
 ---
 title: Verbindung zu DATEV Online
-description: DATEV Unternehmen Online im arkivado CONNECTOR verbinden und konfigurieren: Authentifizierung, Dokumenttypen, Rückschreibung und Export prüfen.
+description: "DATEV Unternehmen Online im arkivado CONNECTOR verbinden und konfigurieren: Authentifizierung, Dokumenttypen, Rückschreibung und Export prüfen."
 tags:
     - DATEV
     - DATEV Unternehmen Online

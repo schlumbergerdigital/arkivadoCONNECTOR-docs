@@ -1,6 +1,6 @@
 ---
 title: Übersicht
-description: arkivado CONNECTOR Dokumentation für ecoDMS: DATEV, DATEV Unternehmen Online, Datei-, XML-, SEPA- und KI-Export einrichten.
+description: "arkivado CONNECTOR Dokumentation für ecoDMS: DATEV, DATEV Unternehmen Online, Datei-, XML-, SEPA- und KI-Export einrichten."
 tags:
     - arkivado CONNECTOR
     - ecoDMS

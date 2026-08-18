@@ -1,6 +1,6 @@
 ---
 title: Grundeinrichtung | arkivado CONNECTOR
-description: arkivado CONNECTOR einrichten: ecoDMS-API freischalten, Lizenz aktivieren und die erste Verbindung zu ecoDMS konfigurieren.
+description: "arkivado CONNECTOR einrichten: ecoDMS-API freischalten, Lizenz aktivieren und die erste Verbindung zu ecoDMS konfigurieren."
 tags:
   - Grundeinrichtung
   - Installation

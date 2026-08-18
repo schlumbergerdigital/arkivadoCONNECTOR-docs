@@ -1,11 +1,11 @@
 ---
 title: Datei-Export – Übersicht
-description: Datei-Export für ecoDMS mit dem arkivado CONNECTOR: Dokumente filtern, lokal ablegen, Dateinamen festlegen und Exporte automatisieren.
+description: "Datei-Export für ecoDMS mit dem arkivado CONNECTOR: Dokumente filtern, lokal ablegen, Dateinamen festlegen und Exporte automatisieren."
 tags:
-	- Datei-Export
-	- ecoDMS
-	- Export
-	- Automatisierung
+    - Datei-Export
+    - ecoDMS
+    - Export
+    - Automatisierung
 ---
 
 # Datei-Export

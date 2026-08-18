@@ -2,10 +2,10 @@
 title: Changelog | arkivado CONNECTOR
 description: Aktuelle Änderungen, neue Funktionen und Fehlerbehebungen im arkivado CONNECTOR für ecoDMS, DATEV und automatisierte Exporte.
 tags:
-	- Changelog
-	- arkivado CONNECTOR
-	- ecoDMS
-	- Updates
+    - Changelog
+    - arkivado CONNECTOR
+    - ecoDMS
+    - Updates
 ---
 
 # Changelog

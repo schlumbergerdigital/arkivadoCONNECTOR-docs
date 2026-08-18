@@ -1,6 +1,6 @@
 ---
 title: XML-Export – Übersicht
-description: XML-Export für ecoDMS mit dem arkivado CONNECTOR: Metadaten in frei definierbarer XML-Struktur ausgeben und Originaldateien mit exportieren.
+description: "XML-Export für ecoDMS mit dem arkivado CONNECTOR: Metadaten in frei definierbarer XML-Struktur ausgeben und Originaldateien mit exportieren."
 tags:
     - XML-Export
     - XML

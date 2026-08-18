@@ -1,6 +1,6 @@
 ---
 title: Datei-Export
-description: Datei-Export im arkivado CONNECTOR konfigurieren: ecoDMS-Dokumente per Filter in lokale Ordner exportieren und nach dem Export zurückschreiben.
+description: "Datei-Export im arkivado CONNECTOR konfigurieren: ecoDMS-Dokumente per Filter in lokale Ordner exportieren und nach dem Export zurückschreiben."
 tags:
     - Datei-Export
     - Konfiguration

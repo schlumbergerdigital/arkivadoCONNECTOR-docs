@@ -1,6 +1,6 @@
 ---
 title: Vorbereitung ecoDMS
-description: ecoDMS für den arkivado CONNECTOR vorbereiten: API-Zugriff aktivieren, Benutzerrechte prüfen und die Verbindung für Exporte einrichten.
+description: "ecoDMS für den arkivado CONNECTOR vorbereiten: API-Zugriff aktivieren, Benutzerrechte prüfen und die Verbindung für Exporte einrichten."
 tags:
     - Grundeinrichtung
     - ecoDMS

@@ -1,6 +1,6 @@
 ---
 title: SEPA Export einrichten
-description: SEPA-Export im arkivado CONNECTOR konfigurieren: Rechnungsfelder aus ecoDMS zuordnen, Zahlungsdaten prüfen und Überweisungen vorbereiten.
+description: "SEPA-Export im arkivado CONNECTOR konfigurieren: Rechnungsfelder aus ecoDMS zuordnen, Zahlungsdaten prüfen und Überweisungen vorbereiten."
 tags:
     - SEPA
     - SEPA-Export

@@ -2,10 +2,10 @@
 title: Download
 description: arkivado CONNECTOR für ecoDMS herunterladen und die passende Version für Ihre Installation beziehen.
 tags:
-	- Download
-	- Installation
-	- arkivado CONNECTOR
-	- ecoDMS
+    - Download
+    - Installation
+    - arkivado CONNECTOR
+    - ecoDMS
 ---
 
 # Download
