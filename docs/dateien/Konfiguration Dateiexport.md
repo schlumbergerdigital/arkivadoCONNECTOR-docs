@@ -1,5 +1,12 @@
 ---
 title: Datei-Export
+description: Datei-Export im arkivado CONNECTOR konfigurieren: ecoDMS-Dokumente per Filter in lokale Ordner exportieren und nach dem Export zurückschreiben.
+tags:
+    - Datei-Export
+    - Konfiguration
+    - ecoDMS
+    - Lokaler Export
+    - Rückschreibung
 ---
 
 # Datei-Export
@@ -208,7 +215,7 @@ Testen einer neuen Konfiguration, bevor Sie sie in den Gesamtlauf aufnehmen.
 ## Empfohlenes Vorgehen
 
 1. In ecoDMS ein Ankreuzfeld für den Export und eines für „erledigt" anlegen
-   (siehe [Vorbereitung ecoDMS](../grundeinrichtung/Vorbereitung%20ecoDMS.md)).
+    (siehe [Vorbereitung ecoDMS](<../grundeinrichtung/Vorbereitung ecoDMS.md>)).
 2. Neue Definition anlegen und benennen.
 3. Zielordner und Dateiname-Template festlegen.
 4. Suchfilter setzen – zunächst eng, z. B. auf ein einzelnes Dokument.
@@ -217,10 +224,9 @@ Testen einer neuen Konfiguration, bevor Sie sie in den Gesamtlauf aufnehmen.
    Zielordner prüfen.
 7. Filter erweitern und die Definition aktiv schalten.
 
-!!! tip "Automatisch ausführen"
-    Datei-Exporte lassen sich über die Aufgabenplanung zeitgesteuert starten – so läuft
-    die Ablage z. B. jede Nacht ohne Ihr Zutun.
-
+!!! tip "Automatisch als Cronjob ausführen"
+	Richten Sie die Aufgabe als Cronjob ein, so wird sie zeitgesteuert vollautomatisch ausgeführt.
+	Siehe hier: [Cronjobs definieren](../cronjobs.md).
 ---
 
 ## Häufige Fragen

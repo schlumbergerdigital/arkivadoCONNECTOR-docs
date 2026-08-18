@@ -16,9 +16,6 @@
         <loc>https://docs.arkivado.digital/grundeinrichtung/Erster%20Start.html</loc>
       </url>
       <url>
-        <loc>https://docs.arkivado.digital/config/index.html</loc>
-      </url>
-      <url>
         <loc>https://docs.arkivado.digital/ki/index.html</loc>
       </url>
       <url>
@@ -59,5 +56,8 @@
       </url>
       <url>
         <loc>https://docs.arkivado.digital/xml/Konfiguration%20XML.html</loc>
+      </url>
+      <url>
+        <loc>https://docs.arkivado.digital/cronjobs.html</loc>
       </url>
 </urlset>

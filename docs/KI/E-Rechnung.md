@@ -1,5 +1,12 @@
 ---
 title: E-Rechnung einrichten
+description: E-Rechnungen mit dem arkivado CONNECTOR und Mistral KI für ecoDMS verarbeiten, Daten erkennen und Dokumente automatisch klassifizieren.
+tags:
+    - E-Rechnung
+    - Mistral KI
+    - ecoDMS
+    - Dokumentenklassifizierung
+    - Automatisierung
 ---
 # E-Rechnung einrichten
 

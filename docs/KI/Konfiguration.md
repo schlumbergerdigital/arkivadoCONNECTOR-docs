@@ -1,5 +1,12 @@
 ---
 title: Mistral KI konfigurieren
+description: Mistral KI im arkivado CONNECTOR konfigurieren: API-Zugang, Klassifizierungsfelder und automatische ecoDMS-Dokumentenablage einrichten.
+tags:
+	- Mistral KI
+	- Konfiguration
+	- ecoDMS
+	- API
+	- Dokumentenklassifizierung
 ---
 
 # Mistral KI konfigurieren
@@ -20,7 +27,7 @@ Dokumente verarbeitet werden und welche Felder nach der Analyse geändert werden
 
 ### 1. API-Schlüssel hinterlegen
 
-Tragen Sie den API-Schlüssel den Sie per E-Mail bekommen haben in das Feld **API-Schlüssel** ein.
+Tragen Sie den API-Schlüssel, den Sie per E-Mail bekommen haben, in das Feld **API-Schlüssel** ein.
 Der Schlüssel wird verschlüsselt gespeichert und nach dem Speichern nicht mehr
 im Klartext angezeigt.
 
@@ -41,7 +48,7 @@ API-Schlüssel gespeichert sein.
 | Modell | Beschreibung |
 |---:|---|
 | `mistral-small-latest` | schnelles und günstiges Modell für die meisten Klassifizierungen ausreichend |
-| `mistral-medium-latest` | teurer, langsamer dafür aber genauer als small  |
+| `mistral-medium-latest` | teurer und langsamer, dafür aber genauer als `mistral-small-latest` |
 
 ### 3. Kreativität festlegen
 
@@ -55,7 +62,7 @@ Antworten arbeitet:
 
 Für eine zuverlässige und wiederholbare Ablage sollte der Wert zunächst auf
 `0` bleiben. Erhöhen Sie ihn nur, wenn Sie bewusst flexiblere Interpretationen
-benötigen. 
+benötigen.
 
 
 
@@ -80,7 +87,7 @@ jeweiligen Geschäftspartners besser erkennen.
 ## Verarbeitungsbereich festlegen
 
 Der **Allgemeine Filter** bestimmt, welche Dokumente grundsätzlich von der KI
-verarbeitet werden. 
+verarbeitet werden.
 
 Verwenden Sie einen Filter, wenn nur bestimmte Dokumente verarbeitet werden
 sollen, zum Beispiel Dokumente mit einem bestimmten Status, einer bestimmten
@@ -90,7 +97,7 @@ Dokumentenart oder einem Kennzeichenfeld.
     **Ohne Filter** werden **alle Dokumente immer wieder** klassifiziert, es können ***hohe Kosten*** entstehen.
 
 !!! example "Typischer Filter"
-	  Alle Dokumente im Ornder Eingangskorb die nicht Zugeondert als Dokumentenart haben und den Status auf zu Klassfizieren haben.  
+	Alle Dokumente im Ordner Eingangskorb, die nicht als Dokumentenart zugeordnet sind und den Status „zu klassifizieren“ haben.
 
 ## Dokumentart automatisch bestimmen
 
@@ -100,20 +107,20 @@ Klassifizierungen ausgeführt.
 
 1. Aktivieren Sie den Schalter **Dokumentart-Bestimmung**.
    
-Die KI bestimmt die Dokumentenart, wenn diese  auf `nicht zugeordnet` steht. 
+Die KI bestimmt die Dokumentenart, wenn diese auf `nicht zugeordnet` steht.
 
 ## Spezial-Klassifizierungen einrichten
 
 
-!!! tip "klein Anfangen -  Nur Catch All verwenden"
-    In der Regel brauchen Sie keine Spezial Klassifizierung. Richten Sie einmal ein 
-     `Catch all ` ein - also eine Regel die auf alle Dokumente angewendet wird - und geben nur im Notfall eine weitere Regel an. Siehe  [hier](#catch-all-verwenden)
+!!! tip "Klein anfangen – nur Catch-All verwenden"
+	In der Regel benötigen Sie keine Spezial-Klassifizierung. Richten Sie einmal ein
+	`Catch-All` ein, also eine Regel, die auf alle Dokumente angewendet wird, und
+	legen Sie nur im Notfall eine weitere Regel an. Siehe [hier](#catch-all-verwenden).
     
 
 Mit **Spezial-Klassifizierungen** erstellen Sie eigene Regeln für bestimmte
 Dokumenttypen. 
 
- 
 1. Klicken Sie auf **Klassifizierung hinzufügen**.
 2. Vergeben Sie einen aussagekräftigen Namen, zum Beispiel
 	`Eingangsrechnung` oder `Ausgangsrechnung`.
@@ -122,12 +129,14 @@ Dokumenttypen.
 	fest.
 5. Fügen Sie unter **Zu klassifizierende Felder** die Felder hinzu, die die KI
 	aus dem Dokument ermitteln soll.
-6. Ergänzen Sie bei Bedarf pro Feld eine zusätzliche Anweisung. Die Hinweiser werden in natürlciher Sprache dazu geschrieben. 
+6. Ergänzen Sie bei Bedarf pro Feld eine zusätzliche Anweisung. Die Hinweise werden in natürlicher Sprache ergänzt.
 7. Definieren Sie die Aktionen bei Erfolg und bei Fehler.
   
 !!! warning "Keine Schleifen"
-     Achten Sie darauf, dass nach dem Durchlauf das Dokument nicht wieder in den Filter fällt. 
-     Haben Sie z.B. als defintion: Status muss `zu Klassifizeren` sein. Setzen Sie im Erfolg den Status auf `prüfen` und im Fehlerfall auf `Fehler`. So werden Dokumente nicht mehrfach bearbetet. 
+	Achten Sie darauf, dass das Dokument nach dem Durchlauf nicht wieder in den Filter fällt.
+	Wenn Sie zum Beispiel als Bedingung festlegen, dass der Status `zu klassifizieren` sein muss,
+	setzen Sie bei Erfolg den Status auf `prüfen` und im Fehlerfall auf `Fehler`. So werden
+	Dokumente nicht mehrfach bearbeitet.
 
 
 ### Zusätzliche Anweisungen
@@ -191,7 +200,6 @@ Eine sinnvolle Konfiguration ist beispielsweise:
 - ein Textfeld für die Fehlermeldung hinterlegen
 
 ## Konfiguration speichern und ausführen
-
 1. Klicken Sie auf **Konfiguration speichern**.
 2. Prüfen Sie, ob mindestens ein aktivierter Bereich mindestens ein Feld
 	enthält.
@@ -207,6 +215,11 @@ der Fehlerliste angezeigt.
 	 Testen Sie eine neue Konfiguration zunächst mit einem kleinen, eindeutig
 	 filterbaren Dokumentbestand. Kontrollieren Sie anschließend die gesetzten
 	 Werte in ecoDMS, bevor Sie den Filter auf einen größeren Bestand erweitern.
+
+
+!!! tip "Automatisch als Cronjob ausführen"
+	Richten Sie die Aufgabe als Cronjob ein, so wird sie zeitgesteuert vollautomatisch ausgeführt.
+	Siehe hier: [Cronjobs definieren](../cronjobs.md).
 
 ## Häufige Probleme
 

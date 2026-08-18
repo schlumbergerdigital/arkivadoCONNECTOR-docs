@@ -1,5 +1,12 @@
 ---
 title: Einrichtung der Klassifizierungsfelder in ecoDMS für Datev
+description: ecoDMS-Klassifizierungsfelder für den DATEV-Export einrichten: Dokumentarten, Exportmarkierungen und benötigte Rechnungsfelder konfigurieren.
+tags:
+    - DATEV
+    - ecoDMS
+    - Klassifizierung
+    - Dokumentarten
+    - Rechnungsfelder
 ---
 
 Der Connector kann Dokumente nach bilibgen Kriterien in ecoDMS suchen und Informationen nach dem Export wieder in ecoDMS hinterlegen. 
@@ -23,3 +30,7 @@ Im arkivado Connector werden die neuen bzw. veränderten Klassifizierungen nach 
 ![Datev Felder](image-14.png)
 
 **Nun ist Ihre Schnittstelle bereit und Sie können im nächsten Schritt den DATEV Unternehmen Online Zugang einrichten.**   
+
+!!! tip "Automatisch als Cronjob ausführen"
+	Richten Sie die Aufgabe als Cronjob ein, so wird sie zeitgesteuert vollautomatisch ausgeführt.
+	Siehe hier: [Cronjobs definieren](../cronjobs.md).

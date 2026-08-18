@@ -1,5 +1,13 @@
 ---
 title: XML-Export konfigurieren
+description: XML-Export im arkivado CONNECTOR konfigurieren: ecoDMS-Dokumente filtern, XML-Struktur definieren, PDFs anhängen und Daten zurückschreiben.
+tags:
+    - XML-Export
+    - XML
+    - Konfiguration
+    - ecoDMS
+    - Metadaten
+    - Rückschreibung
 ---
 
 # XML-Export
@@ -260,6 +268,11 @@ Der CONNECTOR speichert erst, wenn für jede Definition gilt:
 5. **Speichern** und **Ausführen** – anschließend die erzeugte XML im Zielordner prüfen.
 6. Rückschreibung ergänzen und den Filter erweitern.
 
+
+!!! tip "Automatisch als Cronjob ausführen"
+	Richten Sie die Aufgabe als Cronjob ein, so wird sie zeitgesteuert vollautomatisch ausgeführt.
+	Siehe hier: [Cronjobs definieren](../cronjobs.md).
+    
 ---
 
 ## Häufige Fragen

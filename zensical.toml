@@ -14,8 +14,6 @@
    { "Erster Start" = "grundeinrichtung/Erster Start.md" }
    ]},
 
-   {"Einstellungen" = "config/index.md"},
-
    {"KI" = [
      "ki/index.md",
      { "Konfiguration KI" = "ki/Konfiguration.md" },
@@ -33,10 +31,10 @@
    "sepa/index.md",
    { "Konfiguration SEPA" = "sepa/Konfiguration SEPA.md" }
    ]},
-    {"Excel" = [
-   "excel/index.md",
+  ##  {"Excel" = [
+  ## "excel/index.md",
   ## { "Konfiguration Excel" = "excel/Konfiguration Excel.md" }
-   ]},
+  ##   ]},
     {"Datei" = [
    "dateien/index.md",
    { "Konfiguration Dateiexport" = "dateien/Konfiguration Dateiexport.md" }
@@ -45,6 +43,7 @@
    "xml/index.md",
    { "Konfiguration XML" = "xml/Konfiguration XML.md" }
    ]},
+   {"Cronjobs" = "cronjobs.md"},
    {"Doku Archiv" = "https://legacy.docs.arkivado.digital/index.html"},
    {"Impressum" = "https://www.schlumberger.digital/privacy"},
 
@@ -53,7 +52,7 @@
 
 site_url = "https://docs.arkivado.digital/"
 site_name = "arkivado CONNECTOR Dokumentation"
-# site_description = "Die Dokumentation für den arkivado ecoDMS CONNECTOR"
+site_description = "Dokumentation für den arkivado CONNECTOR: ecoDMS mit DATEV, DATEV Unternehmen Online, Datei-, XML-, SEPA- und KI-Export verbinden."
 # site_author = "Max Schwesig "
 
 # copyright = "Copyright &copy; 2026 schlumberger digital e.K"
@@ -61,6 +60,9 @@ site_name = "arkivado CONNECTOR Dokumentation"
 # repo_url = "https://github.com/schlumbergerdigital/arkivadoCONNECTOR-docs"
 # repo_name = "arkivadoCONNECTOR-docs"
 # edit_uri = "edit/main/docs/"
+
+[project.plugins.offline]
+enabled = true
 
 
 extra_css = ["stylesheets/extra.css"]

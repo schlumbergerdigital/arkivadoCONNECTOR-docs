@@ -1,5 +1,11 @@
 ---
 title: Übertragung ecoDMS zu DATEV
+description: Erste Übertragung von ecoDMS zu DATEV Unternehmen Online mit dem arkivado CONNECTOR Schritt für Schritt durchführen und prüfen.
+tags:
+    - DATEV
+    - DATEV Unternehmen Online
+    - Erste Übertragung
+    - ecoDMS
 ---
 # Übertragungung von ecoDMS nach DATEV
 

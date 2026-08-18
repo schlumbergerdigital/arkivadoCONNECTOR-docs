@@ -1,5 +1,12 @@
 ---
 title: SEPA Export einrichten
+description: SEPA-Export im arkivado CONNECTOR konfigurieren: Rechnungsfelder aus ecoDMS zuordnen, Zahlungsdaten prüfen und Überweisungen vorbereiten.
+tags:
+    - SEPA
+    - SEPA-Export
+    - Konfiguration
+    - ecoDMS
+    - Zahlungsdaten
 ---
 # SEPA Export einrichten
 
@@ -202,6 +209,10 @@ Testen Sie die Einrichtung zunächst mit einer einzigen Rechnung:
 
 Nach dem erfolgreichen Export setzt der CONNECTOR in ecoDMS den Haken bei
 `SEPA Export erfolgt` und trägt, falls konfiguriert, das Exportdatum ein.
+
+!!! tip "Automatisch als Cronjob ausführen"
+	Richten Sie die Aufgabe als Cronjob ein, so wird sie zeitgesteuert vollautomatisch ausgeführt.
+	Siehe hier: [Cronjobs definieren](../cronjobs.md).
 
 ## Häufige Fragen und Fehler
 

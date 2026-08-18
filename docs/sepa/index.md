@@ -1,3 +1,14 @@
+---
+title: SEPA-Export für ecoDMS
+description: SEPA-Export mit dem arkivado CONNECTOR einrichten und Zahlungsdaten aus klassifizierten ecoDMS-Rechnungen für das Onlinebanking vorbereiten.
+tags:
+	- SEPA
+	- SEPA-Export
+	- ecoDMS
+	- Rechnungen
+	- Onlinebanking
+---
+
 # SEPA-Export für ecoDMS
 
 ## Rechnungen ablegen. Zahlungen einfacher vorbereiten.

@@ -1,3 +1,14 @@
+---
+title: Mistral KI für ecoDMS
+description: Mistral KI mit dem arkivado CONNECTOR für ecoDMS einrichten und Dokumente automatisch klassifizieren und passenden Ordnern zuordnen.
+tags:
+    - Mistral KI
+    - Künstliche Intelligenz
+    - ecoDMS
+    - Dokumentenklassifizierung
+    - Automatisierung
+---
+
 # Mistral KI für ecoDMS
 
 ## Dokumente verstehen. Automatisch richtig ablegen.

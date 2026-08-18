@@ -1,3 +1,14 @@
+---
+title: DATEV-Anbindung für ecoDMS
+description: DATEV-Anbindung für ecoDMS mit dem arkivado CONNECTOR: Belege filtern, automatisch an DATEV Unternehmen Online übertragen und zurückschreiben.
+tags:
+    - DATEV
+    - DATEV Unternehmen Online
+    - ecoDMS
+    - Belegexport
+    - Rückschreibung
+---
+
 # DATEV-Anbindung für ecoDMS
 
 ## Belege automatisch übertragen. Buchhaltung einfacher machen.

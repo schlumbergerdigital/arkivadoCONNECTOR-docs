@@ -1,5 +1,12 @@
 ---
 title: Übersicht
+description: arkivado CONNECTOR Dokumentation für ecoDMS: DATEV, DATEV Unternehmen Online, Datei-, XML-, SEPA- und KI-Export einrichten.
+tags:
+    - arkivado CONNECTOR
+    - ecoDMS
+    - Dokumentation
+    - DATEV
+    - Export
 ---
 # ![arkivado ecoDMS Connector](arkivado-datev.png){ width="25" } arkivado ECODMS CONNECTOR   
 
