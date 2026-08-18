@@ -16,6 +16,9 @@
         <loc>https://docs.arkivado.digital/grundeinrichtung/Erster%20Start.html</loc>
       </url>
       <url>
+        <loc>https://docs.arkivado.digital/config/index.html</loc>
+      </url>
+      <url>
         <loc>https://docs.arkivado.digital/ki/index.html</loc>
       </url>
       <url>
@@ -44,5 +47,17 @@
       </url>
       <url>
         <loc>https://docs.arkivado.digital/sepa/Konfiguration%20SEPA.html</loc>
+      </url>
+      <url>
+        <loc>https://docs.arkivado.digital/dateien/index.html</loc>
+      </url>
+      <url>
+        <loc>https://docs.arkivado.digital/dateien/Konfiguration%20Dateiexport.html</loc>
+      </url>
+      <url>
+        <loc>https://docs.arkivado.digital/xml/index.html</loc>
+      </url>
+      <url>
+        <loc>https://docs.arkivado.digital/xml/Konfiguration%20XML.html</loc>
       </url>
 </urlset>

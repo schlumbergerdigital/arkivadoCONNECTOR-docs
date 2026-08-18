@@ -174,10 +174,24 @@ wenn beim Auslesen etwas schiefgeht. Bewährt hat sich:
 
 | Problem | Mögliche Ursache und Lösung |
 |---|---|
-| Es werden weiterhin Tokens verbraucht | Schalter **E-Rechnungen automatisch auslesen** ist aus, oder es handelt sich nicht um eine E-Rechnung, sondern um ein PDF ohne eingebettete XML. |
-| Richtung ist immer falsch | Eigene E-Mail-Adressen ergänzen oder die Vorgabe umstellen. |
-| Dokumentenart wird nicht gesetzt | Bezeichnung Eingang/Ausgang stimmt nicht exakt mit dem Wert in ecoDMS überein. |
-| Einzelne Felder bleiben leer | Die Rechnung enthält diesen Wert nicht – im Protokoll steht ein entsprechender Hinweis. |
-| ecoDMS-Feld fehlt in der Auswahl | Auf **ecoDMS-Daten aktualisieren** klicken. |
-| Dokumente werden mehrfach verarbeitet | Aktionen bei Erfolg so setzen, dass das Dokument nicht mehr in den Filter fällt. |
-| Bereich ist rot hinterlegt | Lizenz für das Modul KI-Klassifizierung prüfen. |
+
+??? question "Es werden weiterhin Tokens verbraucht"
+    Schalter **E-Rechnungen automatisch auslesen** ist aus, oder es handelt sich nicht um eine E-Rechnung, sondern um ein PDF ohne eingebettete XML. 
+
+??? question " Richtung ist immer falsch" 
+    Eigene E-Mail-Adressen ergänzen oder die Vorgabe umstellen.
+
+??? question "Dokumentenart wird nicht gesetzt"
+    Bezeichnung Eingang/Ausgang stimmt nicht exakt mit dem Wert in ecoDMS überein.
+
+??? question "Einzelne Felder bleiben leer"
+    Die Rechnung enthält diesen Wert nicht – im Protokoll steht ein entsprechender Hinweis.
+
+??? question "ecoDMS-Feld fehlt in der Auswahl" 
+    Auf **ecoDMS-Daten aktualisieren** klicken.
+
+??? question " Dokumente werden mehrfach verarbeitet "
+    Aktionen bei Erfolg so setzen, dass das Dokument nicht mehr in den Filter fällt.
+
+??? question "Bereich ist rot hinterlegt"
+    Lizenz für das Modul KI-Klassifizierung prüfen.

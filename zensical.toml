@@ -13,7 +13,9 @@
    { "Vorbereitung ecoDMS" = "grundeinrichtung/Vorbereitung ecoDMS.md" },
    { "Erster Start" = "grundeinrichtung/Erster Start.md" }
    ]},
-  
+
+   {"Einstellungen" = "config/index.md"},
+
    {"KI" = [
      "ki/index.md",
      { "Konfiguration KI" = "ki/Konfiguration.md" },
@@ -34,6 +36,14 @@
     {"Excel" = [
    "excel/index.md",
   ## { "Konfiguration Excel" = "excel/Konfiguration Excel.md" }
+   ]},
+    {"Datei" = [
+   "dateien/index.md",
+   { "Konfiguration Dateiexport" = "dateien/Konfiguration Dateiexport.md" }
+   ]},
+     {"XML" = [
+   "xml/index.md",
+   { "Konfiguration XML" = "xml/Konfiguration XML.md" }
    ]},
    {"Doku Archiv" = "https://legacy.docs.arkivado.digital/index.html"},
    {"Impressum" = "https://www.schlumberger.digital/privacy"},
