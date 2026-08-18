@@ -22,7 +22,7 @@ Unterstützt werden:
 - **ebInterface** (Österreich)
 
 Alle übrigen Dokumente durchlaufen wie gewohnt die
-[KI-Klassifizierung](Konfiguration.md).
+[KI-Klassifizierung](konfiguration.md).
 
 !!! warning "Voraussetzungen"
     Die E-Rechnungs-Verarbeitung gehört zum Modul **KI-Klassifizierung** und
@@ -179,8 +179,6 @@ wenn beim Auslesen etwas schiefgeht. Bewährt hat sich:
 
 ## Häufige Probleme
 
-| Problem | Mögliche Ursache und Lösung |
-|---|---|
 
 ??? question "Es werden weiterhin Tokens verbraucht"
     Schalter **E-Rechnungen automatisch auslesen** ist aus, oder es handelt sich nicht um eine E-Rechnung, sondern um ein PDF ohne eingebettete XML. 

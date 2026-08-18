@@ -70,7 +70,7 @@ Hier hinterlegen Sie die Zugangsdaten zu Ihrem ecoDMS-Server.
 
 !!! warning "Voraussetzung"
     Die API muss in ecoDMS aktiviert sein. Die notwendigen Schritte finden Sie unter
-    [Vorbereitung ecoDMS](<../grundeinrichtung/Vorbereitung ecoDMS.md>).
+    [Vorbereitung ecoDMS](../grundeinrichtung/vorbereitung-ecodms.md).
 
 Über **Verbindung testen** prüfen Sie die Eingaben, bevor Sie speichern. Ein bereits
 gespeichertes Passwort muss beim erneuten Speichern nicht noch einmal eingegeben werden.
@@ -97,7 +97,7 @@ Allgemeine Vorgaben, die für alle Exporte gelten, sofern nicht an anderer Stell
     Diese Registerkarte betrifft ausschließlich den **lokalen** DATEV-Export
     (Rechnungsdaten-Service bzw. DATEV-Belegtransfer-Format).
     Die Anbindung an **DATEV Unternehmen Online** konfigurieren Sie im eigenen Menüpunkt
-    **DATEV Online** – siehe [Konfiguration DATEV DUO](<../datev/Konfiguration DATEV DUO.md>).
+    **DATEV Online** – siehe [Konfiguration DATEV DUO](../datev/konfiguration-datev-duo.md).
 
 ### DATEV-Konfiguration
 

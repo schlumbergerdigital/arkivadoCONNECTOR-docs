@@ -5,31 +5,31 @@
 
 
  nav = [
-   { "Übersicht" = "index.html" },
+   { "Übersicht" = "index.md" },
     {"Changelog" = "changelog.md"},
    {"Download" = "download.md"},
    {"Grundeinrichtung" = [
    "grundeinrichtung/index.md",
-   { "Vorbereitung ecoDMS" = "grundeinrichtung/Vorbereitung ecoDMS.md" },
-   { "Erster Start" = "grundeinrichtung/Erster Start.md" }
+   { "Vorbereitung ecoDMS" = "grundeinrichtung/vorbereitung-ecodms.md" },
+   { "Erster Start" = "grundeinrichtung/erster-start.md" }
    ]},
 
    {"KI" = [
      "ki/index.md",
-     { "Konfiguration KI" = "ki/Konfiguration.md" },
-     { "E-Rechnung" = "ki/E-Rechnung.md" },
+     { "Konfiguration KI" = "ki/konfiguration.md" },
+     { "E-Rechnung" = "ki/e-rechnung.md" },
    ##  { "Best Practice" = "ki/Best Practice.md" }
    ]},
     {"DATEV" = [
    "datev/index.md",
-   { "ecoDMS Felder einrichten" = "datev/Konfiguration ecoDMS-datev.md" },
-   { "Konfiguration DATEV DUO" = "datev/Konfiguration DATEV DUO.md" },
-   { "Konfiguration DATEV" = "datev/004 Konfiguration DATEV.md" },
-   {"Erste Übertragung" = "datev/005 Erste Übertragung.md"}
+   { "ecoDMS Felder einrichten" = "datev/konfiguration-ecodms-datev.md" },
+   { "Konfiguration DATEV DUO" = "datev/konfiguration-datev-duo.md" },
+   { "Konfiguration DATEV" = "datev/konfiguration-datev.md" },
+   {"Erste Übertragung" = "datev/erste-uebertragung.md"}
    ]},
     {"SEPA" = [
    "sepa/index.md",
-   { "Konfiguration SEPA" = "sepa/Konfiguration SEPA.md" }
+   { "Konfiguration SEPA" = "sepa/konfiguration-sepa.md" }
    ]},
   ##  {"Excel" = [
   ## "excel/index.md",
@@ -37,12 +37,13 @@
   ##   ]},
     {"Datei" = [
    "dateien/index.md",
-   { "Konfiguration Dateiexport" = "dateien/Konfiguration Dateiexport.md" }
+   { "Konfiguration Dateiexport" = "dateien/konfiguration-dateiexport.md" }
    ]},
      {"XML" = [
    "xml/index.md",
-   { "Konfiguration XML" = "xml/Konfiguration XML.md" }
+   { "Konfiguration XML" = "xml/konfiguration-xml.md" }
    ]},
+   {"Einstellungen" = "config/index.md"},
    {"Cronjobs" = "cronjobs.md"},
    {"Doku Archiv" = "https://legacy.docs.arkivado.digital/index.html"},
    {"Impressum" = "https://www.schlumberger.digital/privacy"},
@@ -51,11 +52,13 @@
 
 
 site_url = "https://docs.arkivado.digital/"
+# Saubere Verzeichnis-URLs ohne .html (wird vom offline-Plugin ausgehebelt)
+use_directory_urls = true
 site_name = "arkivado CONNECTOR Dokumentation"
 site_description = "Dokumentation für den arkivado CONNECTOR: ecoDMS mit DATEV, DATEV Unternehmen Online, Datei-, XML-, SEPA- und KI-Export verbinden."
-# site_author = "Max Schwesig "
+site_author = "schlumberger digital e.K."
 
-# copyright = "Copyright &copy; 2026 schlumberger digital e.K"
+copyright = "Copyright &copy; 2026 schlumberger digital e.K"
 
 # repo_url = "https://github.com/schlumbergerdigital/arkivadoCONNECTOR-docs"
 # repo_name = "arkivadoCONNECTOR-docs"
@@ -66,12 +69,19 @@ site_description = "Dokumentation für den arkivado CONNECTOR: ecoDMS mit DATEV,
 extra_css = ["stylesheets/extra.css"]
 extra_javascript = ["javascripts/extra.js"]
 
+[project.extra]
+# Vorschaubild fuer Social-Previews, relativ zu site_url; pro Seite ueber "image" im Frontmatter ueberschreibbar
+social_image = "arkivado-datev.png"
+generator = false
+
 [project.theme]
 name = "material"
 # variant = "classic"
-# custom_dir = "overrides"
+custom_dir = "overrides"
 favicon = "favicon-sd.svg"
 language = "de"
+# Systemschriften statt Google Fonts: kein externer Request, besseres LCP
+font = false
 features = [
   # "navigation.sections",  # würde Gruppen flach ausklappen statt einklappbar
   "navigation.path",
@@ -135,8 +145,9 @@ toggle = { icon = "material/weather-sunny", name = "Zum hellen Modus wechseln" }
 [project.plugins]
 search = {}
 
+# Offline-Modus laedt einen externen unpkg-Shim und ist nur fuer file://-Builds noetig
 [project.plugins.offline]
-enabled = true
+enabled = false
 # [[project.extra.social]]
 # icon = "fontawesome/brands/github"
 # link = "https://github.com/user/repo"
@@ -195,5 +206,4 @@ pymdownx.tasklist = {
   custom_checkbox = true
 }
 pymdownx.tilde = {}
-
 

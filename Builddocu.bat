@@ -19,4 +19,8 @@
 @echo off
 set PYTHONIOENCODING=utf-8
 pushd %~dp0
+@REM Cache leeren: Zensical verwendet sonst zwischengespeicherte Seiten, die nach
+@REM Umbenennungen oder Nav-Aenderungen noch die alten (.md-)Links enthalten.
+if exist ".cache" rd /s /q ".cache"
 zensical build 
+python seo_postbuild.py

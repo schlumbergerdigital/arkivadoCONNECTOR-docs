@@ -15,4 +15,5 @@
 set PYTHONIOENCODING=utf-8
 pushd %~dp0
 zensical build
+python seo_postbuild.py
 python upload_docu.py

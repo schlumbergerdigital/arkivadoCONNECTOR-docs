@@ -23,4 +23,4 @@ Typische Einsatzzwecke:
 Sie können beliebig viele Definitionen anlegen, einzeln oder als Gesamtlauf ausführen und
 über die Aufgabenplanung automatisieren.
 
-[Konfiguration Dateiexport](<Konfiguration Dateiexport.md>){ .md-button .md-button--primary }
+[Konfiguration Dateiexport](konfiguration-dateiexport.md){ .md-button .md-button--primary }

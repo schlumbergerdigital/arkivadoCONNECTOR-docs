@@ -215,7 +215,7 @@ Testen einer neuen Konfiguration, bevor Sie sie in den Gesamtlauf aufnehmen.
 ## Empfohlenes Vorgehen
 
 1. In ecoDMS ein Ankreuzfeld für den Export und eines für „erledigt" anlegen
-    (siehe [Vorbereitung ecoDMS](<../grundeinrichtung/Vorbereitung ecoDMS.md>)).
+    (siehe [Vorbereitung ecoDMS](../grundeinrichtung/vorbereitung-ecodms.md)).
 2. Neue Definition anlegen und benennen.
 3. Zielordner und Dateiname-Template festlegen.
 4. Suchfilter setzen – zunächst eng, z. B. auf ein einzelnes Dokument.

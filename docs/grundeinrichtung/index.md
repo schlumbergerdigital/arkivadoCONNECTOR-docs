@@ -23,7 +23,7 @@ ersten funktionsfähigen Verbindung.
     Da Dokumente/Belege zu Datev Unternehmen Online (DUO) übertragen werden verbraucht ecoDMS API-Punkte. Diese sind nur in der ***ecoDMS ONE Lizenz*** enthalten. Mit der Business bzw. Privat Edition können keine Dokumente exportiert bzw. übertragen werden.
 
 
-[Vorbereitung ecoDMS](Vorbereitung ecoDMS.md){ .md-button .md-button--primary } - ecoDMS Konfigurieren
+[Vorbereitung ecoDMS](vorbereitung-ecodms.md){ .md-button .md-button--primary } - ecoDMS Konfigurieren
 
 ## 2.  Den CONNECTOR konfigurieren  
-  [Erster Start](Erster Start.md){ .md-button .md-button--primary } – Installation, Lizenz und erster Aufruf der Anwendung
+  [Erster Start](erster-start.md){ .md-button .md-button--primary } – Installation, Lizenz und erster Aufruf der Anwendung

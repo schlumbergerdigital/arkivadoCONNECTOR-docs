@@ -27,4 +27,4 @@ Merkmale:
 !!! info "Lizenz"
     Der XML-Export benötigt die XML-Lizenz.
 
-[XML-Export konfigurieren](<Konfiguration XML.md>){ .md-button .md-button--primary }
+[XML-Export konfigurieren](konfiguration-xml.md){ .md-button .md-button--primary }

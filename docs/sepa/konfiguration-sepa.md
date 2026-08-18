@@ -20,7 +20,7 @@ IBAN und BIC Ihres Firmenkontos bereit.
 !!! info "Voraussetzungen"
     - Das SEPA-Modul ist in Ihrer Lizenz freigeschaltet.
     - Die Verbindung zu ecoDMS ist eingerichtet und getestet
-      (siehe [Vorbereitung ecoDMS](<../grundeinrichtung/Vorbereitung ecoDMS.md>)).
+      (siehe [Vorbereitung ecoDMS](../grundeinrichtung/vorbereitung-ecodms.md)).
     - Ihre Rechnungen werden in ecoDMS klassifiziert z.B. durch [KI](../ki/index.md).
 
 ## Schritt 1: Klassifizierungsfelder in ecoDMS anlegen

@@ -51,14 +51,14 @@ in ecoDMS bis zur Bereitstellung in DATEV.
 
 
 1. **ecoDMS Felder erweitern**   
-    [ecoDMS Felder anlegen](<Konfiguration ecoDMS-datev.md>){ .md-button .md-button--primary } 
+    [ecoDMS Felder anlegen](konfiguration-ecodms-datev.md){ .md-button .md-button--primary } 
 
 2. **DATEV Unternehmen Online mit dem CONNECTOR verbinden**     
-    [Konfiguration DATEV DUO](Konfiguration DATEV DUO.md){ .md-button .md-button--primary } 
+    [Konfiguration DATEV DUO](konfiguration-datev-duo.md){ .md-button .md-button--primary } 
 
 3. **DATEV Mandanten Auswählen und Filter für ecoDMS Bestimmen**        
-    [Datev Mandante](<004 Konfiguration DATEV.md>){ .md-button .md-button--primary } 
+    [Datev Mandante](konfiguration-datev.md){ .md-button .md-button--primary } 
 
 4. **Erste Übertragung**     
-    [Datev Mandante](<005 Erste Übertragung.md>){ .md-button .md-button--primary } 
+    [Datev Mandante](erste-uebertragung.md){ .md-button .md-button--primary } 
     
