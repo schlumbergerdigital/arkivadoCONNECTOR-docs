@@ -2,90 +2,68 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
         <loc>https://docs.arkivado.digital/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/changelog/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/download/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/grundeinrichtung/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/grundeinrichtung/vorbereitung-ecodms/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/grundeinrichtung/erster-start/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/ki/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/ki/konfiguration/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/ki/e-rechnung/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/datev/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/datev/konfiguration-ecodms-datev/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/datev/konfiguration-datev-duo/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/datev/konfiguration-datev/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/datev/erste-uebertragung/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/sepa/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/sepa/konfiguration-sepa/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/dateien/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/dateien/konfiguration-dateiexport/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/xml/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/xml/konfiguration-xml/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/config/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
       <url>
         <loc>https://docs.arkivado.digital/cronjobs/</loc>
-        <lastmod>2026-08-18</lastmod>
       </url>
 </urlset>

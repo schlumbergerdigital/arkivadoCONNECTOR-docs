@@ -14,7 +14,6 @@ tags:
 - API Schnittstelle einrichten   
 In ecoDMS ist die API Schnittstelle einzurichten und zu testen.
 - Klassifizierungsfelder anlegen (abhängig vom Modul z.B.: [Datev Felder](vorbereitung-ecodms.md))   
-F
 - Berechtigungen für den Zugriff prüfen
 
 !!! note "Bitte beachten Sie"

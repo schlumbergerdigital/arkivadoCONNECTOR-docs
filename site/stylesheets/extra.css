@@ -76,6 +76,18 @@
   color: var(--ark-dark-primary-pastell);
 }
 
+/* Das Logo ist eine dunkle Schriftmarke ohne helle Variante -> im dunklen
+   Modus invertieren, damit es wie auf schlumberger.digital sichtbar bleibt. */
+.md-logo img,
+.md-logo svg {
+  transition: filter 125ms;
+}
+
+[data-md-color-scheme="slate"] .md-logo img,
+[data-md-color-scheme="slate"] .md-logo svg {
+  filter: invert(1);
+}
+
 /* -------------------------------------------------------------- Dunkel --- */
 
 [data-md-color-scheme="slate"] {
