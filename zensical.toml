@@ -46,7 +46,9 @@
    {"Einstellungen" = "config/index.md"},
    {"Cronjobs" = "cronjobs.md"},
    {"Doku Archiv" = "https://legacy.docs.arkivado.digital/index.html"},
-   {"Impressum" = "https://www.schlumberger.digital/privacy"},
+   {"Impressum" = "https://www.schlumberger.digital/impressum-datenschutz/"},
+   {"Kontakt" = "https://www.schlumberger.digital/contact/"},
+
 
  ]
 
