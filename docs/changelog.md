@@ -12,6 +12,22 @@ tags:
 
 Alle Aktualisierungen des arkivado ecoDMS DATEV Connectors
 
+
+## 1.1.0 - <small>25.08.2026</small> { id="1.1.0" }
+
+<b><small>Feature</small></b> 
+
+- KI: E-Rechnungen werden automatisch erkannt und klassifiziert, die Dokumente werden nicht mehr mit KI ausgelesen
+- Datei Export: Jetzt möglich Dokumente in Ordnerstruktur von ecoDMS zu exportieren
+- Datei Export: Attribute für Dokumente können nun auch in Unterordnern exportiert werden
+- Dokulinks in der Software eingebaut
+
+
+<b><small>Verbesserung</small></b> 
+- DATEV: Token Refresh verbessert und stabiler
+- Banner fix: Banner wird nun korrekt angezeigt, wenn die Lizenz abgelaufen ist
+
+
 ## 1.0.6 - <small>06.08.2026</small> { id="1.0.6" }
 
 <b><small>Feature</small></b> 
