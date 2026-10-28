@@ -43,6 +43,7 @@
    "xml/index.md",
    { "Konfiguration XML" = "xml/konfiguration-xml.md" }
    ]},
+   
    {"Einstellungen" = "config/index.md"},
    {"Cronjobs" = "cronjobs.md"},
    {"Doku Archiv" = "https://legacy.docs.arkivado.digital/index.html"},

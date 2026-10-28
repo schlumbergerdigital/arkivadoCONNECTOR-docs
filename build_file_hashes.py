@@ -59,7 +59,7 @@ def save_hash_to_json(file_path, output_dir):
     
     print(f"MD5-Hash für {file_path} berechnet und in {json_file_path} gespeichert.")
 
-file_path = r"C:\entwicklung\ecodatev\dist\ArkivadoCONNECTOR.exe"
+file_path = r"C:\entwicklung\arkivadoCONNECTOR\dist\ArkivadoCONNECTOR.exe"
 output_dir = r"C:\entwicklung\arkivadoCONNECTOR-docs\docs\static"  # Verzeichnis für JSON-Dateien
 
 if os.path.isfile(file_path):
